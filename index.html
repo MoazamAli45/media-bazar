@@ -3819,6 +3819,7 @@
                 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
             }
           }
+          filterCardData();
         });
       });
 
@@ -3839,6 +3840,7 @@
             range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
           }
+          filterCardData();
         });
       });
 
@@ -4274,50 +4276,58 @@
         const card = document.createElement("div");
         card.classList.add("group-card");
         card.innerHTML = `
-                <div class="group-card__logo lazyload" data-bg="${data.logo}">
-                  <div class="group-card__mark">
-                    <div class="group-card__mark-fire">&nbsp;</div>
-                  </div>
-                </div>
-                <div class="group-card__header">
-                  <div class="group-card__icon ${data.icon}">
-                    <i class="icon ${data.iconName}"></i>
-                  </div>
-                  <div class="group-card__title">
-                    <div class="group-card__category">${data.category}</div>
-                    <div class="group-card__name" title="${data.name}">${
-          data.name
-        }</div>
-                  </div>
-                </div>
-                <div class="group-card__name--mobile" title="${data.name}">${
-          data.name
-        }</div>
-                <div class="group-card__description">${data.description}</div>
-                <div class="group-card__content">
-                  <div class="group-card__divider">&nbsp;</div>
-                  <div class="group-card__param">
-                    <div class="group-card__param-title">Подписчики</div>
-                    <div class="group-card__param-value">${
-                      data.subscribers
-                    } <span class="grey no-mobile">чел.</span></div>
-                  </div>
-                  <div class="group-card__param">
-                    <div class="group-card__param-title">Доход</div>
-                    <div class="group-card__param-value ${
-                      data.income ? "" : "group-card__param-value_not-specified"
-                    }">${data.income || "не указан"}</div>
-                  </div>
-                </div>
-                <div class="group-card__footer">
-                  <div class="group-card__price" title="${data.price}">${
-          data.price
-        } ₽</div>
-                  <div class="group-card__actions">
-                    <a href="#" class="group-card__link">Подробнее</a>
-                  </div>
-                </div>
-              `;
+                            <div class="group-card__logo lazyload" data-bg="${
+                              data.logo
+                            }">
+                              <div class="group-card__mark">
+                                <div class="group-card__mark-fire">&nbsp;</div>
+                              </div>
+                            </div>
+                            <div class="group-card__header">
+                              <div class="group-card__icon ${data.icon}">
+                                <i class="icon ${data.iconName}"></i>
+                              </div>
+                              <div class="group-card__title">
+                                <div class="group-card__category">${
+                                  data.category
+                                }</div>
+                                <div class="group-card__name" title="${
+                                  data.name
+                                }">${data.name}</div>
+                              </div>
+                            </div>
+                            <div class="group-card__name--mobile" title="${
+                              data.name
+                            }">${data.name}</div>
+                            <div class="group-card__description">${
+                              data.description
+                            }</div>
+                            <div class="group-card__content">
+                              <div class="group-card__divider">&nbsp;</div>
+                              <div class="group-card__param">
+                                <div class="group-card__param-title">Подписчики</div>
+                                <div class="group-card__param-value">${
+                                  data.subscribers
+                                } <span class="grey no-mobile">чел.</span></div>
+                              </div>
+                              <div class="group-card__param">
+                                <div class="group-card__param-title">Доход</div>
+                                <div class="group-card__param-value ${
+                                  data.income
+                                    ? ""
+                                    : "group-card__param-value_not-specified"
+                                }">${data.income || "не указан"}</div>
+                              </div>
+                            </div>
+                            <div class="group-card__footer">
+                              <div class="group-card__price" title="${
+                                data.price
+                              }">${data.price} ₽</div>
+                              <div class="group-card__actions">
+                                <a href="#" class="group-card__link">Подробнее</a>
+                              </div>
+                            </div>
+                          `;
         return card;
       }
 
@@ -4334,16 +4344,40 @@
         container.appendChild(banner);
       }
 
+      // function filterCardData() {
+      //   // Filter cardData based on selected values
+      //   const filteredData = cardData.filter((item) => {
+      //     return (
+      //       (selectedValues.length === 0 ||
+      //         selectedValues.includes(getIconNameSuffix(item.iconName))) &&
+      //       (selectedValues2.includes("Bce") ||
+      //         selectedValues2.length === 0 ||
+      //         selectedValues2.includes(item.category)) &&
+      //       selectedValues3.length === 0
+      //     );
+      //   });
+
       function filterCardData() {
-        // Filter cardData based on selected values
+        // Get the minimum and maximum prices from the input fields
+        const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
+        const maxPrice = parseInt(priceInput[1].value.replace(/\D/g, "")); // Extract numeric characters only
+
+        // Filter cardData based on selected values and price range
         const filteredData = cardData.filter((item) => {
+          // Extract the numeric price from the item
+          const price = parseInt(item.price.replace(/\D/g, "")); // Extract numeric characters only
+
+          // Check if the price of the card falls within the specified range
+          const isPriceInRange = price >= minPrice && price <= maxPrice;
+
           return (
             (selectedValues.length === 0 ||
               selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-            (selectedValues2.includes("Bce") ||
+            (selectedValues2.includes("All") ||
               selectedValues2.length === 0 ||
               selectedValues2.includes(item.category)) &&
-            selectedValues3.length === 0
+            selectedValues3.length === 0 &&
+            isPriceInRange
           );
         });
 
@@ -4351,6 +4385,7 @@
         // Render the filtered data
         renderFilteredCards(filteredData);
       }
+
       function renderFilteredCards(filteredData) {
         // Clear previous content in the container
         container.innerHTML = "";
