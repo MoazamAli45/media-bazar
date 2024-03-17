@@ -280,65 +280,64 @@
                   <!--       -->
                   <div class="select-container">
                     <div class="select-btn">
-                      <span class="btn-text">Select Language</span>
+                      <span class="btn-text" id="btn-text-1"
+                        >Социальная сеть</span
+                      >
                       <span class="arrow-dwn">
                         <i class="fa-solid fa-chevron-down"></i>
                       </span>
                     </div>
                     <ul class="list-items">
-                      <li class="item" data-value="HTML & CSS">
+                      <li id="item-1" class="item" data-value="Социальная сеть">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">HTML & CSS</span>
+                        <span class="item-text">Социальная сеть</span>
                       </li>
-                      <li class="item" data-value="bootstrap">
+                      <li id="item-1" class="item" data-value="vkontakte">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">Bootstrap</span>
+                        <span class="item-text">Вконтакте</span>
                       </li>
-                      <li class="item" data-value="js">
+                      <li id="item-1" class="item" data-value="facebook">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">JavaScript</span>
+                        <span class="item-text">Facebook</span>
                       </li>
-                      <li class="item" data-value="node">
+                      <li id="item-1" class="item" data-value="odnoklassniki">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">Node.Js</span>
+                        <span class="item-text">Одноклассники</span>
                       </li>
-                      <li class="item" data-value="react">
+                      <li id="item-1" class="item" data-value="instagram">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">React JS</span>
+                        <span class="item-text">Instagram</span>
                       </li>
-                      <li class="item" data-value="mongo">
+                      <li id="item-1" class="item" data-value="telegram">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">Mango DB</span>
+                        <span class="item-text">Telegram</span>
+                      </li>
+                      <li id="item-1" class="item" data-value="tik-tok">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">TikTok</span>
+                      </li>
+                      <li id="item-1" class="item" data-value="youtube">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">YouTube</span>
                       </li>
                     </ul>
                   </div>
-                  <!-- <select
-                    id="soc"
-                    name="soc[]"
-                    data-entity="select2"
-                    autocomplete="off"
-                  >
-                    <option value="Социальная сеть">Социальная сеть</option>
-                    <option value="vkontakte">Вконтакте</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="odnoklassniki">Одноклассники</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="telegram">Telegram</option>
-                    <option value="tik-tok">TikTok</option>
-                    <option value="youtube">YouTube</option>
-                  </select> -->
                 </div>
               </div>
             </div>
@@ -369,7 +368,7 @@
                   />
                 </div>
               </div>
-              <div class="wrapper">
+              <div class="double-range">
                 <div class="slider">
                   <div class="progress"></div>
                 </div>
@@ -378,16 +377,16 @@
                     type="range"
                     class="range-min"
                     min="0"
-                    max="10000"
-                    value="2500"
+                    max="496062"
+                    value="0"
                     step="100"
                   />
                   <input
                     type="range"
                     class="range-max"
                     min="0"
-                    max="10000"
-                    value="7500"
+                    max="496062"
+                    value="496062"
                     step="100"
                   />
                 </div>
@@ -430,62 +429,190 @@
                 <div
                   class="filter__select select select_dark select_with-checkboxes"
                 >
-                  <select
-                    id="category"
-                    name="category[]"
-                    data-entity="select2"
-                    autocomplete="off"
-                    multiple="multiple"
-                  >
-                    <option value="Все">Все</option>
-                    <option value="Автомобили">Автомобили</option>
-                    <option value="Бизнес">Бизнес</option>
-                    <option value="Быт./Эл. техника">Быт./Эл. техника</option>
-                    <option value="Животные">Животные</option>
-                    <option value="Законы и власть">Законы и власть</option>
-                    <option value="Игры">Игры</option>
-                    <option value="Интернет">Интернет</option>
-                    <option value="Каталоги сайтов">Каталоги сайтов</option>
-                    <option value="Кино и музыка">Кино и музыка</option>
-                    <option value="Компьютеры">Компьютеры</option>
-                    <option value="Культура">Культура</option>
-                    <option value="Мебель">Мебель</option>
-                    <option value="Медицина">Медицина</option>
-                    <option value="Мода и красота">Мода и красота</option>
-                    <option value="Недвижимость">Недвижимость</option>
-                    <option value="Обучение">Обучение</option>
-                    <option value="Отдых и еда">Отдых и еда</option>
-                    <option value="Политика">Политика</option>
-                    <option value="Природа">Природа</option>
-                    <option value="Производство">Производство</option>
-                    <option value="Психология">Психология</option>
-                    <option value=" &nbsp;абота">&nbsp;абота</option>
-                    <option value=" &nbsp;егион. порталы">
-                      &nbsp;егион. порталы
-                    </option>
-                    <option value=" &nbsp;еклама">&nbsp;еклама</option>
-                    <option value=" &nbsp;елигия">&nbsp;елигия</option>
-                    <option value="СМИ">СМИ</option>
-                    <option value="Связь">Связь</option>
-                    <option value="Семья">Семья</option>
-                    <option value="Соц. сети">Соц. сети</option>
-                    <option value="Спорт">Спорт</option>
-                    <option value="Справки">Справки</option>
-                    <option value="Стройка, ремонт">Стройка, ремонт</option>
-                    <option value="Торговля">Торговля</option>
-                    <option value="Туризм">Туризм</option>
-                    <option value="Финансы">Финансы</option>
-                    <option value="Хобби">Хобби</option>
-                    <option value="Энциклопедии">Энциклопедии</option>
-                    <option value="Эротика">Эротика</option>
-                    <option value="Юмор">Юмор</option>
-                    <option value="Знакомства и общение">
-                      Знакомства и общение
-                    </option>
-                    <option value="Познавательное">Познавательное</option>
-                    <option value="Факты">Факты</option>
-                    <option value="Другое">Другое</option>
-                  </select>
+                  <div class="select-container">
+                    <div class="select-btn" id="select-2">
+                      <span class="btn-text" id="btn-text-2">Все</span>
+                      <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="list-items">
+                      <li id="item-2" class="item-1" data-value="Все">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Все</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Автомобили">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Автомобили</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Бизнес">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Бизнес</span>
+                      </li>
+                      <li
+                        id="item-2"
+                        class="item"
+                        data-value="Быт./Эл. техника"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Быт./Эл. техника</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Животные">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Животные</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Законы и власть">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Законы и власть</span>
+                      </li>
+                      <li
+                        id="item-2"
+                        class="item"
+                        data-value=" &nbsp;егион. порталы"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">&nbsp;егион. порталы</span>
+                      </li>
+                      <li id="item-2" class="item" data-value=" &nbsp;еклама">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">&nbsp;еклама</span>
+                      </li>
+                      <li id="item-2" class="item" data-value=" &nbsp;елигия">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">&nbsp;елигия</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="СМИ">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">СМИ</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Связь">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Связь</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Семья">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Семья</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Соц. сети">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Соц. сети</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Спорт">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Спорт</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Справки">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Справки</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Стройка, ремонт">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Стройка, ремонт</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Торговля">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Торговля</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Туризм">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Туризм</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Финансы">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Финансы</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Хобби">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Хобби</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Энциклопедии">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Энциклопедии</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Эротика">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Эротика</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Юмор">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Юмор</span>
+                      </li>
+                      <li
+                        id="item-2"
+                        class="item"
+                        data-value="Знакомства и общение"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Знакомства и общение</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Познавательное">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Познавательное</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Факты">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Факты</span>
+                      </li>
+                      <li id="item-2" class="item" data-value="Другое">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Другое</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -499,25 +626,58 @@
                 <div
                   class="filter__select select select_dark select_with-checkboxes"
                 >
-                  <select
-                    id="transfer"
-                    name="transfer[]"
-                    data-entity="select2"
-                    autocomplete="off"
-                    multiple="multiple"
-                  >
-                    <option value="Любой">Любой</option>
-                    <option value="Передача прав администратора">
-                      Передача прав администратора
-                    </option>
-                    <option value="Передача прав владельца">
-                      Передача прав владельца
-                    </option>
-                    <option value="Передача вместе с аккаунтом">Другое</option>
-                    <option value="Передача владельца через поддержку">
-                      Передача владельца через поддержку
-                    </option>
-                  </select>
+                  <div class="select-container">
+                    <div class="select-btn" id="select-3">
+                      <span class="btn-text" id="btn-text-3">Любой</span>
+                      <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="list-items">
+                      <li id="item-3" class="item" data-value="Любой">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Любой</span>
+                      </li>
+                      <li
+                        id="item-3"
+                        class="item"
+                        data-value="Передача прав администратора"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача прав администратора</span
+                        >
+                      </li>
+                      <li
+                        id="item-3"
+                        class="item"
+                        data-value="Передача вместе с аккаунтом"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача вместе с аккаунтом</span
+                        >
+                      </li>
+                      <li
+                        id="item-3"
+                        class="item"
+                        data-value="Передача владельца через поддержку"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача владельца через поддержку</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3540,6 +3700,145 @@
       });
 
       // Reference to the container where the cards will be inserted
+      const selectBtn = document.querySelector(".select-btn");
+      const items = document.querySelectorAll("#item-1");
+      const btnText = document.querySelector("#btn-text-1");
+      const btnText2 = document.querySelector("#btn-text-2");
+      const btnText3 = document.querySelector("#btn-text-3");
+      const select2 = document.querySelector("#select-2");
+      const select3 = document.querySelector("#select-3");
+
+      const items2 = document.querySelectorAll("#item-2");
+      const items3 = document.querySelectorAll("#item-3");
+
+      let selectedValues = [];
+      let selectedValues2 = [];
+      let selectedValues3 = [];
+
+      select2.addEventListener("click", () => {
+        select2.classList.toggle("open");
+      });
+      select3.addEventListener("click", () => {
+        select3.classList.toggle("open");
+      });
+      selectBtn.addEventListener("click", () => {
+        selectBtn.classList.toggle("open");
+      });
+
+      items.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("checked");
+          const value = item.getAttribute("data-value");
+
+          if (item.classList.contains("checked")) {
+            selectedValues.push(value);
+          } else {
+            const index = selectedValues.indexOf(value);
+            if (index !== -1) {
+              selectedValues.splice(index, 1);
+            }
+          }
+
+          if (selectedValues.length > 0) {
+            btnText.innerText = `${selectedValues[selectedValues.length - 1]} `;
+          }
+
+          console.log(selectedValues);
+        });
+      });
+      items2.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("checked");
+          const value = item.getAttribute("data-value");
+
+          if (item.classList.contains("checked")) {
+            selectedValues2.push(value);
+          } else {
+            const index = selectedValues2.indexOf(value);
+            if (index !== -1) {
+              selectedValues2.splice(index, 1);
+            }
+          }
+
+          if (selectedValues2.length > 0) {
+            btnText2.innerText = `${
+              selectedValues2[selectedValues2.length - 1]
+            } `;
+          }
+
+          console.log(selectedValues2);
+        });
+      });
+      items3.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("checked");
+          const value = item.getAttribute("data-value");
+
+          if (item.classList.contains("checked")) {
+            selectedValues3.push(value);
+          } else {
+            const index = selectedValues3.indexOf(value);
+            if (index !== -1) {
+              selectedValues3.splice(index, 1);
+            }
+          }
+
+          if (selectedValues3.length > 0) {
+            btnText3.innerText = `${
+              selectedValues3[selectedValues3.length - 1]
+            } `;
+          }
+
+          console.log(selectedValues3);
+        });
+      });
+
+      const rangeInput = document.querySelectorAll(".range-input input"),
+        priceInput = document.querySelectorAll(".price-input input"),
+        range = document.querySelector(".slider .progress");
+      let priceGap = 0;
+
+      priceInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minPrice = parseInt(priceInput[0].value),
+            maxPrice = parseInt(priceInput[1].value);
+
+          if (
+            maxPrice - minPrice >= priceGap &&
+            maxPrice <= rangeInput[1].max
+          ) {
+            if (e.target.className === "input-min") {
+              rangeInput[0].value = minPrice;
+              range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+            } else {
+              rangeInput[1].value = maxPrice;
+              range.style.right =
+                100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+            }
+          }
+        });
+      });
+
+      rangeInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minVal = parseInt(rangeInput[0].value),
+            maxVal = parseInt(rangeInput[1].value);
+
+          if (maxVal - minVal < priceGap) {
+            if (e.target.className === "range-min") {
+              rangeInput[0].value = maxVal - priceGap;
+            } else {
+              rangeInput[1].value = minVal + priceGap;
+            }
+          } else {
+            priceInput[0].value = minVal;
+            priceInput[1].value = maxVal;
+            range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+          }
+        });
+      });
+
       const container = document.getElementById("group-container");
       let cardData = [
         {
@@ -3957,54 +4256,6 @@
                 income: "not specified", // Example income
                 price: item.price,
               });
-              //   const card = document.createElement("div");
-              //   card.className = "group-card";
-              //   card.dataset.entity = "group";
-              //   card.dataset.modal = "ajax";
-              //   card.dataset.path = "#";
-              //   card.dataset.target = "#groupModal-151960";
-              //   card.style.order = "1";
-              //   card.innerHTML = `
-              //          <div class="group-card__logo lazyload" data-bg="${item.imageUrl}">
-              //               <div class="group-card__mark">
-              //                 <div class="group-card__mark-fire"> &nbsp;</div>
-              //               </div>
-              //             </div>
-              //             <div class="group-card__header">
-              //               <div class="group-card__icon group-card__icon-instagram">
-              //                 <i class="icon icon-instagram"></i>
-              //               </div>
-              //               <div class="group-card__title">
-              //                 <div class="group-card__category">${item.category}</div>
-              //                 <div class="group-card__name" title="${item.topic}">${item.topic}</div>
-              //               </div>
-              //             </div>
-              //             <div class="group-card__name--mobile" title="${item.topic}">${item.topic}</div>
-              //             <div class="group-card__description">${item.description}</div>
-              //             <div class="group-card__content">
-              //               <div class="group-card__divider"> &nbsp;</div>
-              //               <div class="group-card__param">
-              //                 <div class="group-card__param-title">Подписчики</div>
-              //                 <div class="group-card__param-value">${item.subscribers}
-              //                   <span class="grey no-mobile">чел.</span>
-              //                   </div>
-              //               </div>
-              //               <div class="group-card__param">
-              //                 <div class="group-card__param-title">Доход</div>
-              //                 <div class="group-card__param-value group-card__param-value_not-specified">
-              // не указан</div>
-              //               </div>
-              //             </div>
-              //             <div class="group-card__footer">
-              //               <div class="group-card__price" title="${item.price}">${item.price}₽</div>
-              //               <div class="group-card__actions">
-              //                 <a href="#" class="group-card__link">Подробнее</a>
-              //               </div>
-              //             </div>
-
-              //         `;
-
-              //   fetchedCards.push(card); // Add the created card to the fetchedCards array
             });
 
             renderCards(); // Call the function to render the cards
@@ -4084,27 +4335,28 @@
       const selectElement = document.getElementById("soc");
 
       // Listen for changes in the select element
-      const form = document.querySelector(".filter-form");
-      selectElement.addEventListener("change", function (e) {
-        e.preventDefault();
-        console.log("CHANGE");
-        // Get the selected options
-        const selectedOptions = Array.from(this.selectedOptions).map(
-          (option) => option.value
-        );
-        console.log(selectedOptions, "SELECTED");
-        // Filter the cardData array based on the selected options
-        const filteredData = cardData.filter((item) => {
-          return selectedOptions.includes(getIconNameSuffix(item.iconName));
-        });
-        // console.log(filteredData, "FILTERED");
-        // // Call a function to render the filtered data
-        renderFilteredData(filteredData);
-        // cardData = filteredData;
-        // console.log(cardData, "After FIltered");
-        // // Call a function to render the filtered data
-        // renderCards();
-      });
+
+      // const form = document.querySelector(".filter-form");
+      // selectElement.addEventListener("change", function (e) {
+      //   e.preventDefault();
+      //   console.log("CHANGE");
+      //   // Get the selected options
+      //   const selectedOptions = Array.from(this.selectedOptions).map(
+      //     (option) => option.value
+      //   );
+      //   console.log(selectedOptions, "SELECTED");
+      //   // Filter the cardData array based on the selected options
+      //   const filteredData = cardData.filter((item) => {
+      //     return selectedOptions.includes(getIconNameSuffix(item.iconName));
+      //   });
+      //   // console.log(filteredData, "FILTERED");
+      //   // // Call a function to render the filtered data
+      //   renderFilteredData(filteredData);
+      //   // cardData = filteredData;
+      //   // console.log(cardData, "After FIltered");
+      //   // // Call a function to render the filtered data
+      //   // renderCards();
+      // });
 
       // Function to render the filtered data
       function renderFilteredData(filteredData) {
