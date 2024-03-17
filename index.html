@@ -3819,7 +3819,7 @@
                 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
             }
           }
-          filterCardData();
+          filterRangeCardData();
         });
       });
 
@@ -3840,7 +3840,7 @@
             range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
           }
-          filterCardData();
+          filterRangeCardData();
         });
       });
 
@@ -4344,6 +4344,33 @@
         container.appendChild(banner);
       }
 
+      // function filterCardData() {
+      //   // Get the minimum and maximum prices from the input fields
+      //   const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
+      //   const maxPrice = parseInt(priceInput[1].value.replace(/\D/g, "")); // Extract numeric characters only
+
+      //   // Filter cardData based on selected values and price range
+      //   const filteredData = cardData.filter((item) => {
+      //     // Extract the numeric price from the item
+      //     const price = parseInt(item.price.replace(/\D/g, "")); // Extract numeric characters only
+
+      //     // Check if the price of the card falls within the specified range
+      //     const isPriceInRange = price >= minPrice && price <= maxPrice;
+      //     console.log(selectedValues, "Selected ", selectedValues2);
+      //     return (
+      //       ((selectedValues.length === 0 && cardData) ||
+      //         selectedValues.includes(getIconNameSuffix(item.iconName))) &&
+      //       (selectedValues2.includes("All") ||
+      //         selectedValues2.length === 0 ||
+      //         selectedValues2.includes(item.category)) &&
+      //       isPriceInRange
+      //     );
+      //   });
+
+      //   console.log("Filtered", filteredData);
+      //   // Render the filtered data
+      //   renderFilteredCards(filteredData);
+      // }
       function filterCardData() {
         // Get the minimum and maximum prices from the input fields
         const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
@@ -4357,19 +4384,49 @@
           // Check if the price of the card falls within the specified range
           const isPriceInRange = price >= minPrice && price <= maxPrice;
 
+          console.log(getIconNameSuffix(item.iconName));
+          // Check if the item's iconName matches any selectedValues or if no iconName is selected
+          const isIconNameMatched = selectedValues.includes(
+            getIconNameSuffix(item.iconName)
+          );
+          console.log(selectedValues, "Selected ", isIconNameMatched);
+
+          // Check if the item's category matches any selectedValues2 or if 'All' is selected
+          const isCategoryMatched =
+            selectedValues2.includes("Bce") ||
+            selectedValues2.length === 0 ||
+            selectedValues2.includes(item.category);
+
+          // return isIconNameMatched && isCategoryMatched && isPriceInRange;
           return (
             (selectedValues.length === 0 ||
               selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-            (selectedValues2.includes("All") ||
+            (selectedValues2.includes("Bce") ||
               selectedValues2.length === 0 ||
               selectedValues2.includes(item.category)) &&
-            selectedValues3.length === 0 &&
-            isPriceInRange
+            selectedValues3.length === 0
           );
         });
 
-        console.log("Filtered", filteredData);
+        console.log("Filtered Data:", filteredData);
         // Render the filtered data
+        renderFilteredCards(filteredData);
+      }
+
+      function filterRangeCardData() {
+        const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
+        const maxPrice = parseInt(priceInput[1].value.replace(/\D/g, "")); // Extract numeric characters only
+
+        // Filter cardData based on selected values and price range
+        const filteredData = cardData.filter((item) => {
+          // Extract the numeric price from the item
+          const price = parseInt(item.price.replace(/\D/g, "")); // Extract numeric characters only
+
+          // Check if the price of the card falls within the specified range
+          const isPriceInRange = price >= minPrice && price <= maxPrice;
+
+          return isPriceInRange;
+        });
         renderFilteredCards(filteredData);
       }
 
@@ -4403,6 +4460,7 @@
       //   EXTRACTING ICON NAME ------------------->
       // Function to extract the part of iconName after the hyphen
       function getIconNameSuffix(iconName) {
+        console.log(iconName);
         // Split iconName by hyphen ("-") and get the second part
         const [, suffix] = iconName.split("-");
         return suffix;
