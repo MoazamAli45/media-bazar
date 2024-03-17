@@ -4344,19 +4344,6 @@
         container.appendChild(banner);
       }
 
-      // function filterCardData() {
-      //   // Filter cardData based on selected values
-      //   const filteredData = cardData.filter((item) => {
-      //     return (
-      //       (selectedValues.length === 0 ||
-      //         selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-      //       (selectedValues2.includes("Bce") ||
-      //         selectedValues2.length === 0 ||
-      //         selectedValues2.includes(item.category)) &&
-      //       selectedValues3.length === 0
-      //     );
-      //   });
-
       function filterCardData() {
         // Get the minimum and maximum prices from the input fields
         const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
@@ -4398,6 +4385,20 @@
         // After rendering the filtered cards, append the banner
         container.appendChild(banner);
       }
+
+      // Search functionality ---------------->
+      const searchInput = document.querySelector("#main_search");
+      searchInput.addEventListener("input", (event) => {
+        const searchText = event.target.value.toLowerCase().trim();
+        const filteredData = cardData.filter((item) => {
+          // Customize this condition based on your card data structure and search criteria
+          return (
+            item.name.toLowerCase().includes(searchText) ||
+            item.description.toLowerCase().includes(searchText)
+          );
+        });
+        renderFilteredCards(filteredData);
+      });
 
       //   EXTRACTING ICON NAME ------------------->
       // Function to extract the part of iconName after the hyphen
