@@ -1,146 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Безопасная сделка, безопасно купить группу, сделка без риска, покупка групп, биржа групп, гарант, купить с гарантом"
+    />
+    <meta
+      name="description"
+      content="Безопасная сделка. Защита от мошенников при покупке и продаже групп. Купить или продать группу без риска."
+    />
 
-  <meta name="keywords"
-    content="Безопасная сделка, безопасно купить группу, сделка без риска, покупка групп, биржа групп, гарант, купить с гарантом" />
-  <meta name="description"
-    content="Безопасная сделка. Защита от мошенников при покупке и продаже групп. Купить или продать группу без риска." />
+    <title>Безопасная сделка. Защита от мошенников. �&nbsp;ешение споров</title>
 
-  <title>Безопасная сделка. Защита от мошенников. �&nbsp;ешение споров</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+  <body>
+    <div id="messages" class="messages"></div>
 
-<body>
-  <div id="messages" class="messages"></div>
-
-  <a href="javascript:void(0)" data-toggle="modal" data-target="#registrationModal" class="chat-button">
-    <div class="chat-button__container" title="Написать администрации сайта">
-      <i class="icon icon-chat"></i>
-    </div>
-    <div class="chat-button__hint">Написать администрации сайта</div>
-  </a>
-
-  <div class="page">
-    <header id="header" class="header">
-      <div class="header__top container">
-        <nav class="header__menu">
-          <ul>
-            <li>
-              <a class="" href="index.html">
-                <i class="icon icon-briefcase"></i>Биржа
-              </a>
-            </li>
-            <li class="header__menu-dropdown">
-              <a class="" href="how-it-work.html">
-                <i class="icon icon-shield2"></i>Безопасная сделка
-              </a>
-              <ul>
-                <li>
-                  <a class="" href="how-it-work.html">Безопасная Сделка</a>
-                </li>
-                <li>
-                  <a class="" href="fee.html">Безопасная сделка в телеграмме</a>
-                </li>
-                <li><a class="" href="arbitrage.html">Решение споров</a></li>
-                <li><a class="" href="review.html">Гарант</a></li>
-              </ul>
-            </li>
-
-            <li class="header__menu-dropdown">
-              <a class="" href="javascript:void(0)"> Другое </a>
-              <ul>
-                <li>
-                  <a class="" href="sellers.html">Партнерская программа</a>
-                </li>
-                <li>
-                  <a class="" href="become-seller.html">
-                    Как стать продавцом</a>
-                </li>
-                <li>
-                  <a class="" href="become-buyer.html">Как стать покупателем</a>
-                </li>
-                <li><a class="" href="contact-seller.html">Контакты </a></li>
-              </ul>
-            </li>
-            <li class="header__menu-dropdown">
-              <a class="" href="javascript:void(0)"> Другое (other) </a>
-              <ul>
-                <li><a class="" href="about-services.html">О Сервисе</a></li>
-                <li>
-                  <a class="" href="gurantator-services.html">Договор-оферта на оказание услуг гаранта сделки
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="invidual-services.html">Договор-оферта на оказание отдельных услуг</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <a href="index.html" class="header__logo"></a>
-
-        <div class="header__top-actions">
-          <button data-goal="create-advert" type="button" data-toggle="modal" data-target="#registrationModal"
-            class="btn btn_blue">
-            <i class="icon icon_mr icon-new"></i>
-            Новое объявление
-          </button>
-
-          <div class="button-group">
-            <button data-goal="click-reg" data-toggle="modal" data-target="#registrationModal" class="btn btn_green"
-              type="button">
-              <i class="icon icon_mr icon-user"></i>
-              �&nbsp;егистрация
-            </button>
-            <a href="add.html" data-target="#loginModal" class="btn" type="button">
-              <i class="icon icon_mr icon-login"></i>
-              Login
-            </a>
-          </div>
-        </div>
-        <div class="header__mobile-links"></div>
-
-        <button type="button" class="header__burger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
+    <a
+      href="javascript:void(0)"
+      data-toggle="modal"
+      data-target="#registrationModal"
+      class="chat-button"
+    >
+      <div class="chat-button__container" title="Написать администрации сайта">
+        <i class="icon icon-chat"></i>
       </div>
-      <div class="header__dropdown">
-        <div class="container">
-          <div class="header__dropdown-actions">
-            <a href="javascript:void(0)" data-goal="create-advert" type="button" data-toggle="modal"
-              data-target="#registrationModal" class="btn btn_blue btn--dropdown">
-              <i class="icon icon_mr icon-new"></i>
-              Новое объявление
-            </a>
-            <div class="button-group">
-              <button data-goal="click-reg" data-toggle="modal" data-target="#registrationModal" class="btn btn_green"
-                type="button">
-                <i class="icon icon_mr icon-user"></i>
-                �&nbsp;егистрация
-              </button>
-              <a href="add.html" data-target="#loginModal" class="btn header__login" type="button">
-                <i class="icon icon_mr icon-login"></i>
-                Login
-              </a>
-            </div>
-          </div>
-          <nav class="header__dropdown-menu">
+      <div class="chat-button__hint">Написать администрации сайта</div>
+    </a>
+
+    <div class="page">
+      <header id="header" class="header">
+        <div class="header__top container">
+          <nav class="header__menu">
             <ul>
               <li>
                 <a class="" href="index.html">
                   <i class="icon icon-briefcase"></i>Биржа
                 </a>
               </li>
-              <li>
+              <li class="header__menu-dropdown">
                 <a class="" href="how-it-work.html">
                   <i class="icon icon-shield2"></i>Безопасная сделка
                 </a>
@@ -149,299 +58,752 @@
                     <a class="" href="how-it-work.html">Безопасная Сделка</a>
                   </li>
                   <li>
-                    <a class="" href="fee.html">Безопасная сделка в телеграмме</a>
+                    <a class="" href="fee.html"
+                      >Безопасная сделка в телеграмме</a
+                    >
                   </li>
-                  <li>
-                    <a class="" href="arbitrage.html">Решение споров</a>
-                  </li>
+                  <li><a class="" href="arbitrage.html">Решение споров</a></li>
                   <li><a class="" href="review.html">Гарант</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="" href="sellers.html">
-                  <i class="icon icon-trophy"></i>РЕЙТИНГ ПРОДАВЦОВ
-                </a>
+
+              <li class="header__menu-dropdown">
+                <a class="" href="javascript:void(0)"> Другое </a>
+                <ul>
+                  <li>
+                    <a class="" href="sellers.html">Партнерская программа</a>
+                  </li>
+                  <li>
+                    <a class="" href="become-seller.html">
+                      Как стать продавцом</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="become-buyer.html"
+                      >Как стать покупателем</a
+                    >
+                  </li>
+                  <li><a class="" href="contact-seller.html">Контакты </a></li>
+                </ul>
               </li>
-              <li>
-                <a class="" href="become-seller.html">
-                  <i class="icon icon-handshake"></i>Партнерка
-                </a>
+              <li class="header__menu-dropdown">
+                <a class="" href="javascript:void(0)"> Другое (other) </a>
+                <ul>
+                  <li><a class="" href="about-services.html">О Сервисе</a></li>
+                  <li>
+                    <a class="" href="gurantator-services.html"
+                      >Договор-оферта на оказание услуг гаранта сделки
+                    </a>
+                  </li>
+                  <li>
+                    <a class="" href="invidual-services.html"
+                      >Договор-оферта на оказание отдельных услуг</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
-        </div>
-      </div>
-    </header>
-    <div class="content content_change-container content-reviews">
-      <section class="container container_with-bg" style="padding-top: 30px">
-        <div class="rating__box box" style="padding: 30px">
-          <form id="myForm">
-            <div class="add-form">
-              <div class="input-text">
-                <input type="text" name="Category" placeholder="Category like business finance etc" value=""
-                  required="required" />
-              </div>
-              <div class="input-text">
-                <input type="text" name="topic" placeholder="Topic" required="required" />
-              </div>
-              <div class="input-text">
-                <input type="text" name="subscriber" placeholder="Subscribers" required="required" />
-              </div>
-              <div class="input-text">
-                <textarea name="description" placeholder="Description" required="required"></textarea>
-              </div>
-              <div class="input-text">
-                <input type="number" name="price" placeholder="Price" required="required" />
-              </div>
-              <div class="input-text">
-                <input type="text" name="income" placeholder="Income " />
-              </div>
-              <div class="input-text">
-                <input type="file" name="file" placeholder="Upload File" id="fileInp" required="required" />
-              </div>
+          <a href="index.html" class="header__logo"></a>
 
-              <div class="input-text btn-submit">
-                <button type="submit">Submit</button>
+          <div class="header__top-actions">
+            <button
+              data-goal="create-advert"
+              type="button"
+              data-toggle="modal"
+              data-target="#registrationModal"
+              class="btn btn_blue"
+            >
+              <i class="icon icon_mr icon-new"></i>
+              Новое объявление
+            </button>
+
+            <div class="button-group">
+              <button
+                data-goal="click-reg"
+                data-toggle="modal"
+                data-target="#registrationModal"
+                class="btn btn_green"
+                type="button"
+              >
+                <i class="icon icon_mr icon-user"></i>
+                �&nbsp;егистрация
+              </button>
+              <a
+                href="add.html"
+                data-target="#loginModal"
+                class="btn"
+                type="button"
+              >
+                <i class="icon icon_mr icon-login"></i>
+                Login
+              </a>
+            </div>
+          </div>
+          <div class="header__mobile-links"></div>
+
+          <button type="button" class="header__burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+        <div class="header__dropdown">
+          <div class="container">
+            <div class="header__dropdown-actions">
+              <a
+                href="javascript:void(0)"
+                data-goal="create-advert"
+                type="button"
+                data-toggle="modal"
+                data-target="#registrationModal"
+                class="btn btn_blue btn--dropdown"
+              >
+                <i class="icon icon_mr icon-new"></i>
+                Новое объявление
+              </a>
+              <div class="button-group">
+                <button
+                  data-goal="click-reg"
+                  data-toggle="modal"
+                  data-target="#registrationModal"
+                  class="btn btn_green"
+                  type="button"
+                >
+                  <i class="icon icon_mr icon-user"></i>
+                  �&nbsp;егистрация
+                </button>
+                <a
+                  href="add.html"
+                  data-target="#loginModal"
+                  class="btn header__login"
+                  type="button"
+                >
+                  <i class="icon icon_mr icon-login"></i>
+                  Login
+                </a>
               </div>
             </div>
-          </form>
-        </div>
-      </section>
-    </div>
-    <!--  FOOTER -->
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__container container">
-          <div class="footer__menu">
-            <div class="footer__navigation footer__navigation_service">
-              <div class="footer__navigation-title">Сервис</div>
+            <nav class="header__dropdown-menu">
               <ul>
-                <li><a href="contact-seller.html">Контакты</a></li>
-                <li><a href="about.html">О сервисе</a></li>
                 <li>
-                  <a href="rules.html">Правила использования нашей биржи</a>
+                  <a class="" href="index.html">
+                    <i class="icon icon-briefcase"></i>Биржа
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Договор оферты на оказание услуг гаранта сделки</a>
+                  <a class="" href="how-it-work.html">
+                    <i class="icon icon-shield2"></i>Безопасная сделка
+                  </a>
+                  <ul>
+                    <li>
+                      <a class="" href="how-it-work.html">Безопасная Сделка</a>
+                    </li>
+                    <li>
+                      <a class="" href="fee.html"
+                        >Безопасная сделка в телеграмме</a
+                      >
+                    </li>
+                    <li>
+                      <a class="" href="arbitrage.html">Решение споров</a>
+                    </li>
+                    <li><a class="" href="review.html">Гарант</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Договор оферты на оказание отдельных услуг
-
+                  <a class="" href="sellers.html">
+                    <i class="icon icon-trophy"></i>РЕЙТИНГ ПРОДАВЦОВ
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="become-seller.html">
+                    <i class="icon icon-handshake"></i>Партнерка
                   </a>
                 </li>
               </ul>
-            </div>
-            <div class="footer__navigation footer__navigation_information">
-              <div class="footer__navigation-title">Информация</div>
-              <ul>
-                <li><a href="Offer.html">Пользовательское соглашение</a></li>
-                <li><a href="offer-grant.html">Оферта гаранта</a></li>
-                <li><a href="Policy.html">Политика конфиденциальности</a></li>
-                <li><a href="rules.html">Правила пользования</a></li>
-              </ul>
-            </div>
-            <div class="footer__navigation footer__navigation_networks">
-              <div class="footer__navigation-title">Мы в соц. сетях</div>
-              <ul>
-                <!-- <li><a href="#"><i class="icon icon-vk"></i></a></li> -->
-                <li>
-                  <a href="#"><i class="icon icon-telegram"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__info">
-            <div class="footer__copyright">
-              © MediaBazar.social, 2016-2024
-            </div>
-            <div class="footer__description">
-              Биржа каналов и груп в социальных сетях<br /><br />
-            </div>
-            <div class="footer__by"></div>
-
-            <div class="footer__navigation footer__navigation_infonetworks">
-              <div class="footer__navigation-title">Мы в соц. сетях</div>
-              <ul>
-                <li>
-                  <a href="#"><i class="icon icon-vk"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon icon-telegram"></i></a>
-                </li>
-              </ul>
-
-              <div class="tablet footer__navigation_payment--ul">
-                <span><img src="images/yandex-money.svg" /></span>
-                <span><img src="images/qiwi.svg" /></span>
-                <span><img src="images/visa.svg" /></span>
-                <span><img src="images/master-card.svg" /></span>
-              </div>
-            </div>
+            </nav>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-
-  <div id="popups">
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-      aria-hidden="true">
-      <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
-        <div class="modal-content modal__box">
-          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-            <i class="icon icon-close-thin"></i>
-          </button>
-          <div class="modal__header">
-            <div class="modal__title">Войти</div>
-          </div>
-          <form class="login-modal__content modal__content" action="/login_check" data-ajax="" data-success="redirect"
-            method="post">
-            <input type="hidden" name="_csrf_token" value="UamN3cY-WGRs5ttDjMbS8AY1sWOv0j3cjwLw5-KoJgo" />
-            <input type="hidden" name="_target_path" value="/safedeal/review/" />
-
-            <div class="login-modal__inputs">
-              <div class="error-container" data-entity="form-error"></div>
-              <div class="input-text">
-                <input type="text" name="_username" placeholder="E-mail" value="" required="required" />
-              </div>
-              <div class="input-text">
-                <input type="password" name="_password" placeholder="Пароль" required="required" />
-              </div>
-            </div>
-
-            <div class="login-modal__under-inputs">
-              <label class="input-checkbox">
-                <input type="checkbox" name="_remember_me" value="on" checked="" />
-                <div class="input-checkbox__box"></div>
-                <div class="input-checkbox__label">Запомнить</div>
-              </label>
-              <a href="#" class="login-modal__recover-link" data-toggle="modal"
-                data-target="#resetPasswordModal">Восстановить пароль</a>
-            </div>
-
-            <div class="login-modal__submit">
-              <button type="submit" id="submit_login" class="btn btn_blue btn_shadow btn_action">
-                войти
-              </button>
-            </div>
-          </form>
-          <div class="login-modal__extra">
-            <div class="login-modal__extra-title">
-              или быстро войти через соцсети
-            </div>
-            <div class="login-modal__socials">
-              <div class="socials">
-                <a href="https://salegroups.ru/connect/vk" class="socials__item socials__item_vk">
-                  <i class="icon icon-vk"></i>
-                </a>
-                <a href="https://salegroups.ru/connect/fb" class="socials__item socials__item_fb">
-                  <i class="icon icon-fb"></i>
-                </a>
-                <a href="https://salegroups.ru/connect/ok" class="socials__item socials__item_ok">
-                  <i class="icon icon-ok"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog"
-      aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
-      <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
-        <div class="modal-content modal__box">
-          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-            <i class="icon icon-close-thin"></i>
-          </button>
-          <div class="modal__header">
-            <div class="modal__title">Восстановление пароля</div>
-          </div>
-          <form class="login-modal__content modal__content" data-ajax="" data-success="close-modal"
-            action="/resetting/send" method="post">
-            <div class="login-modal__inputs">
-              <div class="error-container" data-entity="form-error"></div>
-              <div class="input-text">
-                <input type="text" name="username" placeholder="E-mail" required="required" />
-              </div>
-            </div>
-            <div class="login-modal__submit">
-              <button type="submit" class="btn btn_blue btn_shadow btn_action">
-                Сбросить пароль
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel"
-      aria-hidden="true">
-      <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
-        <div class="modal-content modal__box">
-          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-            <i class="icon icon-close-thin"></i>
-          </button>
-          <div class="modal__header">
-            <div class="modal__title">�&nbsp;егистрация</div>
-          </div>
-          <form name="fos_user_registration_form" method="post" action="/register"
-            class="login-modal__content modal__content" autocomplete="new-password" data-ajax=""
-            data-success="redirect">
-            <input type="hidden" name="_target_path" value="/safedeal/review/" />
-
-            <div class="login-modal__inputs">
-              <div class="error-container" data-entity="form-error"></div>
-              <div class="input-text">
-                <input type="text" id="fos_user_registration_form_fullName" name="fos_user_registration_form[fullName]"
-                  required="required" maxlength="45" pattern=".{3,}" autocomplete="off" placeholder="Ваше имя" />
-              </div>
-              <div class="input-text">
-                <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]"
-                  required="required" autocomplete="off" placeholder="E-mail" />
-              </div>
-              <div class="input-text">
-                <input type="password" id="fos_user_registration_form_plainPassword"
-                  name="fos_user_registration_form[plainPassword]" required="required" autocomplete="new-password"
-                  placeholder="Пароль" />
-              </div>
-            </div>
-            <div class="login-modal__under-inputs">
-              <label class="input-checkbox">
-                <input type="checkbox" checked="" required="required" name="rules" />
-                <div class="input-checkbox__box"></div>
-                <div class="input-checkbox__label">
-                  Я принимаю
-                  <a target="_blank" href="/offer-garant/">оферту гаранта</a>
-                  и
-                  <a target="_blank" href="/policy/">политику конфиденциальности</a>, согласен с получением уведомлений
-                  и новостей на почту
+      </header>
+      <div class="content content_change-container content-reviews">
+        <section class="container container_with-bg" style="padding-top: 30px">
+          <div class="rating__box box" style="padding: 30px">
+            <form id="myForm">
+              <div class="add-form">
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="Category"
+                    placeholder="Category like business finance etc"
+                    value=""
+                    required="required"
+                  />
                 </div>
-              </label>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="topic"
+                    placeholder="Topic"
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="subscriber"
+                    placeholder="Subscribers"
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="social"
+                    placeholder="Social Media"
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <textarea
+                    name="description"
+                    placeholder="Description"
+                    required="required"
+                  ></textarea>
+                </div>
+                <div class="input-text">
+                  <input
+                    type="number"
+                    name="price"
+                    placeholder="Price"
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <input type="text" name="income" placeholder="Income " />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="file"
+                    name="file"
+                    placeholder="Upload File"
+                    id="fileInp"
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <div class="select-container" id="select-add">
+                    <div class="select-btn" id="select-4">
+                      <span class="btn-text" id="btn-text-4">Любой</span>
+                      <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="list-items">
+                      <li id="item-4" class="item" data-value="Любой">
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Любой</span>
+                      </li>
+                      <li
+                        id="item-4"
+                        class="item"
+                        data-value="Передача прав администратора"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача прав администратора</span
+                        >
+                      </li>
+                      <li
+                        id="item-4"
+                        class="item"
+                        data-value="Передача вместе с аккаунтом"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача вместе с аккаунтом</span
+                        >
+                      </li>
+                      <li
+                        id="item-4"
+                        class="item"
+                        data-value="Передача владельца через поддержку"
+                      >
+                        <span class="checkbox">
+                          <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text"
+                          >Передача владельца через поддержку</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="input-text btn-submit">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!--  FOOTER -->
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__container container">
+            <div class="footer__menu">
+              <div class="footer__navigation footer__navigation_service">
+                <div class="footer__navigation-title">Сервис</div>
+                <ul>
+                  <li><a href="contact-seller.html">Контакты</a></li>
+                  <li><a href="about.html">О сервисе</a></li>
+                  <li>
+                    <a href="rules.html">Правила использования нашей биржи</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Договор оферты на оказание услуг гаранта сделки</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#">Договор оферты на оказание отдельных услуг </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__navigation footer__navigation_information">
+                <div class="footer__navigation-title">Информация</div>
+                <ul>
+                  <li><a href="Offer.html">Пользовательское соглашение</a></li>
+                  <li><a href="offer-grant.html">Оферта гаранта</a></li>
+                  <li><a href="Policy.html">Политика конфиденциальности</a></li>
+                  <li><a href="rules.html">Правила пользования</a></li>
+                </ul>
+              </div>
+              <div class="footer__navigation footer__navigation_networks">
+                <div class="footer__navigation-title">Мы в соц. сетях</div>
+                <ul>
+                  <!-- <li><a href="#"><i class="icon icon-vk"></i></a></li> -->
+                  <li>
+                    <a href="#"><i class="icon icon-telegram"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="login-modal__submit">
-              <button type="submit" data-goal="click-reg" class="btn btn_green btn_shadow btn_action">
-                Зарегистрироваться
-              </button>
+            <div class="footer__info">
+              <div class="footer__copyright">
+                © MediaBazar.social, 2016-2024
+              </div>
+              <div class="footer__description">
+                Биржа каналов и груп в социальных сетях<br /><br />
+              </div>
+              <div class="footer__by"></div>
+
+              <div class="footer__navigation footer__navigation_infonetworks">
+                <div class="footer__navigation-title">Мы в соц. сетях</div>
+                <ul>
+                  <li>
+                    <a href="#"><i class="icon icon-vk"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-telegram"></i></a>
+                  </li>
+                </ul>
+
+                <div class="tablet footer__navigation_payment--ul">
+                  <span><img src="images/yandex-money.svg" /></span>
+                  <span><img src="images/qiwi.svg" /></span>
+                  <span><img src="images/visa.svg" /></span>
+                  <span><img src="images/master-card.svg" /></span>
+                </div>
+              </div>
             </div>
-            <input type="hidden" id="fos_user_registration_form__target_path"
-              name="fos_user_registration_form[_target_path]" /><input type="hidden"
-              id="fos_user_registration_form__token" name="fos_user_registration_form[_token]"
-              value="IKeNY4ktiLK2ZIcXY0LePowpT1wiPTxRD9T50kTbXOU" />
-          </form>
-          <div class="login-modal__extra">
-            <div class="login-modal__extra-title">
-              или быстро войти через соцсети
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="popups">
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="login-modal modal-dialog modal-dialog-centered modal__dialog"
+          role="document"
+        >
+          <div class="modal-content modal__box">
+            <button
+              type="button"
+              class="modal__close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="icon icon-close-thin"></i>
+            </button>
+            <div class="modal__header">
+              <div class="modal__title">Войти</div>
             </div>
-            <div class="login-modal__socials">
-              <div class="socials">
-                <a href="https://salegroups.ru/connect/vk" class="socials__item socials__item_vk">
-                  <i class="icon icon-vk"></i>
-                </a>
-                <a href="https://salegroups.ru/connect/fb" class="socials__item socials__item_fb">
-                  <i class="icon icon-fb"></i>
-                </a>
-                <a href="https://salegroups.ru/connect/ok" class="socials__item socials__item_ok">
-                  <i class="icon icon-ok"></i>
-                </a>
+            <form
+              class="login-modal__content modal__content"
+              action="/login_check"
+              data-ajax=""
+              data-success="redirect"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="_csrf_token"
+                value="UamN3cY-WGRs5ttDjMbS8AY1sWOv0j3cjwLw5-KoJgo"
+              />
+              <input
+                type="hidden"
+                name="_target_path"
+                value="/safedeal/review/"
+              />
+
+              <div class="login-modal__inputs">
+                <div class="error-container" data-entity="form-error"></div>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="_username"
+                    placeholder="E-mail"
+                    value=""
+                    required="required"
+                  />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="password"
+                    name="_password"
+                    placeholder="Пароль"
+                    required="required"
+                  />
+                </div>
+              </div>
+
+              <div class="login-modal__under-inputs">
+                <label class="input-checkbox">
+                  <input
+                    type="checkbox"
+                    name="_remember_me"
+                    value="on"
+                    checked=""
+                  />
+                  <div class="input-checkbox__box"></div>
+                  <div class="input-checkbox__label">Запомнить</div>
+                </label>
+                <a
+                  href="#"
+                  class="login-modal__recover-link"
+                  data-toggle="modal"
+                  data-target="#resetPasswordModal"
+                  >Восстановить пароль</a
+                >
+              </div>
+
+              <div class="login-modal__submit">
+                <button
+                  type="submit"
+                  id="submit_login"
+                  class="btn btn_blue btn_shadow btn_action"
+                >
+                  войти
+                </button>
+              </div>
+            </form>
+            <div class="login-modal__extra">
+              <div class="login-modal__extra-title">
+                или быстро войти через соцсети
+              </div>
+              <div class="login-modal__socials">
+                <div class="socials">
+                  <a
+                    href="https://salegroups.ru/connect/vk"
+                    class="socials__item socials__item_vk"
+                  >
+                    <i class="icon icon-vk"></i>
+                  </a>
+                  <a
+                    href="https://salegroups.ru/connect/fb"
+                    class="socials__item socials__item_fb"
+                  >
+                    <i class="icon icon-fb"></i>
+                  </a>
+                  <a
+                    href="https://salegroups.ru/connect/ok"
+                    class="socials__item socials__item_ok"
+                  >
+                    <i class="icon icon-ok"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="resetPasswordModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="resetPasswordModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="login-modal modal-dialog modal-dialog-centered modal__dialog"
+          role="document"
+        >
+          <div class="modal-content modal__box">
+            <button
+              type="button"
+              class="modal__close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="icon icon-close-thin"></i>
+            </button>
+            <div class="modal__header">
+              <div class="modal__title">Восстановление пароля</div>
+            </div>
+            <form
+              class="login-modal__content modal__content"
+              data-ajax=""
+              data-success="close-modal"
+              action="/resetting/send"
+              method="post"
+            >
+              <div class="login-modal__inputs">
+                <div class="error-container" data-entity="form-error"></div>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="E-mail"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="login-modal__submit">
+                <button
+                  type="submit"
+                  class="btn btn_blue btn_shadow btn_action"
+                >
+                  Сбросить пароль
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="registrationModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="registrationModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="login-modal modal-dialog modal-dialog-centered modal__dialog"
+          role="document"
+        >
+          <div class="modal-content modal__box">
+            <button
+              type="button"
+              class="modal__close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="icon icon-close-thin"></i>
+            </button>
+            <div class="modal__header">
+              <div class="modal__title">�&nbsp;егистрация</div>
+            </div>
+            <form
+              name="fos_user_registration_form"
+              method="post"
+              action="/register"
+              class="login-modal__content modal__content"
+              autocomplete="new-password"
+              data-ajax=""
+              data-success="redirect"
+            >
+              <input
+                type="hidden"
+                name="_target_path"
+                value="/safedeal/review/"
+              />
+
+              <div class="login-modal__inputs">
+                <div class="error-container" data-entity="form-error"></div>
+                <div class="input-text">
+                  <input
+                    type="text"
+                    id="fos_user_registration_form_fullName"
+                    name="fos_user_registration_form[fullName]"
+                    required="required"
+                    maxlength="45"
+                    pattern=".{3,}"
+                    autocomplete="off"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="email"
+                    id="fos_user_registration_form_email"
+                    name="fos_user_registration_form[email]"
+                    required="required"
+                    autocomplete="off"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="input-text">
+                  <input
+                    type="password"
+                    id="fos_user_registration_form_plainPassword"
+                    name="fos_user_registration_form[plainPassword]"
+                    required="required"
+                    autocomplete="new-password"
+                    placeholder="Пароль"
+                  />
+                </div>
+              </div>
+              <div class="login-modal__under-inputs">
+                <label class="input-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    required="required"
+                    name="rules"
+                  />
+                  <div class="input-checkbox__box"></div>
+                  <div class="input-checkbox__label">
+                    Я принимаю
+                    <a target="_blank" href="/offer-garant/">оферту гаранта</a>
+                    и
+                    <a target="_blank" href="/policy/"
+                      >политику конфиденциальности</a
+                    >, согласен с получением уведомлений и новостей на почту
+                  </div>
+                </label>
+              </div>
+              <div class="login-modal__submit">
+                <button
+                  type="submit"
+                  data-goal="click-reg"
+                  class="btn btn_green btn_shadow btn_action"
+                >
+                  Зарегистрироваться
+                </button>
+              </div>
+              <input
+                type="hidden"
+                id="fos_user_registration_form__target_path"
+                name="fos_user_registration_form[_target_path]"
+              /><input
+                type="hidden"
+                id="fos_user_registration_form__token"
+                name="fos_user_registration_form[_token]"
+                value="IKeNY4ktiLK2ZIcXY0LePowpT1wiPTxRD9T50kTbXOU"
+              />
+            </form>
+            <div class="login-modal__extra">
+              <div class="login-modal__extra-title">
+                или быстро войти через соцсети
+              </div>
+              <div class="login-modal__socials">
+                <div class="socials">
+                  <a
+                    href="https://salegroups.ru/connect/vk"
+                    class="socials__item socials__item_vk"
+                  >
+                    <i class="icon icon-vk"></i>
+                  </a>
+                  <a
+                    href="https://salegroups.ru/connect/fb"
+                    class="socials__item socials__item_fb"
+                  >
+                    <i class="icon icon-fb"></i>
+                  </a>
+                  <a
+                    href="https://salegroups.ru/connect/ok"
+                    class="socials__item socials__item_ok"
+                  >
+                    <i class="icon icon-ok"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="socialsModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="socialsModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="socials-modal modal-dialog modal-dialog-centered modal__dialog"
+          role="document"
+        >
+          <div class="modal-content modal__box">
+            <button
+              type="button"
+              class="modal__close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="icon icon-close-thin"></i>
+            </button>
+            <div class="socials-modal__content">
+              <div class="socials-modal__image">
+                <img src="images/socials.svg" alt="" />
+              </div>
+              <div class="socials-modal__container">
+                <div class="socials-modal__title">
+                  Быстро. Безопасно. Salegroups!
+                </div>
+                <div class="socials-modal__body">
+                  Подписывайтесь на нас, чтобы не упустить возможность живого
+                  общения, получения новостей, новых объявлений и полезных
+                  советов
+                </div>
+                <div class="socials-modal__buttons">
+                  <a
+                    href="https://vk.com/salegroupsru"
+                    target="_blank"
+                    class="btn btn_action socials-modal__button socials-modal__button_vk"
+                    rel="noreferrer"
+                  >
+                    <i class="icon icon-vk"></i>
+                    Перейти в группу VK
+                  </a>
+                  <a
+                    href="https://t.me/salegroups"
+                    target="_blank"
+                    class="btn btn_action socials-modal__button socials-modal__button_telegram"
+                    rel="noreferrer"
+                  >
+                    <i class="icon icon-telegram"></i>
+                    Перейти в Telegram
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -449,226 +811,223 @@
       </div>
     </div>
 
-    <div class="modal fade" id="socialsModal" tabindex="-1" role="dialog" aria-labelledby="socialsModalLabel"
-      aria-hidden="true">
-      <div class="socials-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
-        <div class="modal-content modal__box">
-          <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-            <i class="icon icon-close-thin"></i>
-          </button>
-          <div class="socials-modal__content">
-            <div class="socials-modal__image">
-              <img src="images/socials.svg" alt="" />
-            </div>
-            <div class="socials-modal__container">
-              <div class="socials-modal__title">
-                Быстро. Безопасно. Salegroups!
-              </div>
-              <div class="socials-modal__body">
-                Подписывайтесь на нас, чтобы не упустить возможность живого
-                общения, получения новостей, новых объявлений и полезных
-                советов
-              </div>
-              <div class="socials-modal__buttons">
-                <a href="https://vk.com/salegroupsru" target="_blank"
-                  class="btn btn_action socials-modal__button socials-modal__button_vk" rel="noreferrer">
-                  <i class="icon icon-vk"></i>
-                  Перейти в группу VK
-                </a>
-                <a href="https://t.me/salegroups" target="_blank"
-                  class="btn btn_action socials-modal__button socials-modal__button_telegram" rel="noreferrer">
-                  <i class="icon icon-telegram"></i>
-                  Перейти в Telegram
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <script>
+      window.__date = {
+        upload_avatar: "/user/avatar",
+        _cache: "",
+      };
 
-  <script>
-    window.__date = {
-      upload_avatar: "/user/avatar",
-      _cache: "",
-    };
+      window.sse = {
+        user: "anon",
+        hub: "https://salegroups.ru:3000",
+        heartbeatTimeout: 300000,
+        token: "",
+        topics: [],
+      };
 
-    window.sse = {
-      user: "anon",
-      hub: "https://salegroups.ru:3000",
-      heartbeatTimeout: 300000,
-      token: "",
-      topics: [],
-    };
+      document.addEventListener("lazybeforeunveil", function (e) {
+        var bg = e.target.getAttribute("data-bg");
 
-    document.addEventListener("lazybeforeunveil", function (e) {
-      var bg = e.target.getAttribute("data-bg");
+        if (bg) {
+          e.target.style.backgroundImage = "url(" + bg + ")";
+        }
+      });
+    </script>
 
-      if (bg) {
-        e.target.style.backgroundImage = "url(" + bg + ")";
-      }
-    });
-  </script>
+    <script src="js/script.js"></script>
 
-  <script src="js/script.js"></script>
-
-  <script>
-    var HW_config = {
-      selector: ".header__logo",
-      account: "J3PaPy",
-      translations: {
-        title: "Последние обновления",
-        readMore: "Подробнее",
-        labels: {
-          new: "Новинка",
-          improvement: "Улучшение",
-          fix: "Исправление",
+    <script>
+      var HW_config = {
+        selector: ".header__logo",
+        account: "J3PaPy",
+        translations: {
+          title: "Последние обновления",
+          readMore: "Подробнее",
+          labels: {
+            new: "Новинка",
+            improvement: "Улучшение",
+            fix: "Исправление",
+          },
         },
-      },
-    };
-  </script>
+      };
+    </script>
 
-  <script>
-    $(document).ready(function () { });
-  </script>
+    <script>
+      $(document).ready(function () {});
+    </script>
 
-  <script>
-    var isLoadVk = false;
-    // window.onscroll = function() {
-    //     if (isLoadVk) {
-    //         return;
-    //     }
-    //     isLoadVk = true;
-    //     $.getScript("https://vk.com/js/api/openapi.js?167", function () {
-    //         VK.Widgets.Group("vk_groups", {mode: 1, color1: '1D3143', color2: 'FFFFFF', width: 'auto', no_cover: 1}, 122745489);
-    //     });
-    // };
+    <script>
+      var isLoadVk = false;
+      // window.onscroll = function() {
+      //     if (isLoadVk) {
+      //         return;
+      //     }
+      //     isLoadVk = true;
+      //     $.getScript("https://vk.com/js/api/openapi.js?167", function () {
+      //         VK.Widgets.Group("vk_groups", {mode: 1, color1: '1D3143', color2: 'FFFFFF', width: 'auto', no_cover: 1}, 122745489);
+      //     });
+      // };
 
-    window.onload = function () {
-      setTimeout(function () {
-        $.getScript("https://cdn.headwayapp.co/widget.js");
+      window.onload = function () {
+        setTimeout(function () {
+          $.getScript("https://cdn.headwayapp.co/widget.js");
 
-        (function (m, e, t, r, i, k, a) {
-          m[i] =
-            m[i] ||
-            function () {
-              (m[i].a = m[i].a || []).push(arguments);
-            };
-          m[i].l = 1 * new Date();
-          (k = e.createElement(t)),
-            (a = e.getElementsByTagName(t)[0]),
-            (k.async = 1),
-            (k.src = r),
-            a.parentNode.insertBefore(k, a);
-        })(
-          window,
-          document,
-          "script",
-          "https://mc.yandex.ru/metrika/tag.js",
-          "ym"
-        );
-
-        ym(36391285, "init", {
-          clickmap: true,
-          trackLinks: true,
-          accurateTrackBounce: true,
-        });
-      }, 3000);
-    };
-  </script>
-
-  <!--     Uploading data to database -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-    import {
-      getStorage,
-      ref,
-      uploadBytesResumable,
-      getDownloadURL,
-    } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-storage.js";
-    import {
-      getDatabase,
-      ref as dbRef,
-      push,
-    } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
-    const firebaseConfig = {
-      apiKey: "AIzaSyBVQGCtmyEvPrDWwFCSMepaRttz4yr3P8M",
-      authDomain: "sgproject-df247.firebaseapp.com",
-      projectId: "sgproject-df247",
-      storageBucket: "sgproject-df247.appspot.com",
-      messagingSenderId: "774151557777",
-      appId: "1:774151557777:web:18ecc25a07480b9361a530",
-    };
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase();
-
-    // Add event listener to form submission
-
-    const storage = getStorage();
-    // Function to handle form submission
-    function handleSubmit(event) {
-      event.preventDefault(); // Prevent default form submission
-
-      const form = new FormData(event.target); // Get form data
-      console.log(form, "FORM");
-      const imageFile = form.get("file"); // Get the image file
-
-      // Upload image to Firebase Storage
-      const imageRef = ref(storage, "images/" + imageFile.name);
-      const uploadTask = uploadBytesResumable(imageRef, imageFile);
-
-      uploadTask
-        .then((snapshot) => {
-          // Get download URL of the uploaded image
-          getDownloadURL(snapshot.ref)
-            .then((downloadURL) => {
-              // Combine image download URL with other form data
-              const data = {
-                category: form.get("Category"),
-                topic: form.get("topic"),
-                subscribers: form.get("subscriber"),
-                description: form.get("description"),
-                price: form.get("price"),
-                income: form.get("income"),
-                imageUrl: downloadURL, // Add image download URL
+          (function (m, e, t, r, i, k, a) {
+            m[i] =
+              m[i] ||
+              function () {
+                (m[i].a = m[i].a || []).push(arguments);
               };
-              // Save combined data to Firebase Realtime Database
-              push(dbRef(database, "Products"), data)
-                .then(() => {
-                  console.log(
-                    "Data successfully uploaded to Firebase Realtime Database"
-                  );
-                  alert(
-                    "Data successfully uploaded to Firebase Realtime Database"
-                  );
-                  // You can redirect or show a success message here
-                })
-                .catch((error) => {
-                  console.error("Error uploading data:", error);
+            m[i].l = 1 * new Date();
+            (k = e.createElement(t)),
+              (a = e.getElementsByTagName(t)[0]),
+              (k.async = 1),
+              (k.src = r),
+              a.parentNode.insertBefore(k, a);
+          })(
+            window,
+            document,
+            "script",
+            "https://mc.yandex.ru/metrika/tag.js",
+            "ym"
+          );
 
-                  // Handle error here
-                });
-            })
-            .catch((error) => {
-              console.error("Error getting download URL:", error);
-              // Handle error here
-            });
-        })
-        .catch((error) => {
-          console.error("Error uploading image:", error);
-          // Handle error here
+          ym(36391285, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+          });
+        }, 3000);
+      };
+    </script>
+
+    <!--     Uploading data to database -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import {
+        getStorage,
+        ref,
+        uploadBytesResumable,
+        getDownloadURL,
+      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-storage.js";
+      import {
+        getDatabase,
+        ref as dbRef,
+        push,
+      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyBVQGCtmyEvPrDWwFCSMepaRttz4yr3P8M",
+        authDomain: "sgproject-df247.firebaseapp.com",
+        projectId: "sgproject-df247",
+        storageBucket: "sgproject-df247.appspot.com",
+        messagingSenderId: "774151557777",
+        appId: "1:774151557777:web:18ecc25a07480b9361a530",
+      };
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase();
+
+      // Add event listener to form submission
+      let selectedValues3 = [];
+      const storage = getStorage();
+      // Function to handle form submission
+      function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = new FormData(event.target); // Get form data
+        console.log(form, "FORM");
+        const imageFile = form.get("file"); // Get the image file
+
+        // Upload image to Firebase Storage
+        const imageRef = ref(storage, "images/" + imageFile.name);
+        const uploadTask = uploadBytesResumable(imageRef, imageFile);
+
+        uploadTask
+          .then((snapshot) => {
+            // Get download URL of the uploaded image
+            getDownloadURL(snapshot.ref)
+              .then((downloadURL) => {
+                // Combine image download URL with other form data
+                const data = {
+                  category: form.get("Category"),
+                  topic: form.get("topic"),
+                  subscribers: form.get("subscriber"),
+                  description: form.get("description"),
+                  price: form.get("price"),
+                  income: form.get("income"),
+                  iconName: form.get("social"),
+                  adminRights: selectedValues3,
+                  imageUrl: downloadURL, // Add image download URL
+                };
+                // Save combined data to Firebase Realtime Database
+                push(dbRef(database, "Products"), data)
+                  .then(() => {
+                    console.log(
+                      "Data successfully uploaded to Firebase Realtime Database"
+                    );
+                    alert(
+                      "Data successfully uploaded to Firebase Realtime Database"
+                    );
+                    // You can redirect or show a success message here
+                  })
+                  .catch((error) => {
+                    console.error("Error uploading data:", error);
+
+                    // Handle error here
+                  });
+              })
+              .catch((error) => {
+                console.error("Error getting download URL:", error);
+                // Handle error here
+              });
+          })
+          .catch((error) => {
+            console.error("Error uploading image:", error);
+            // Handle error here
+          });
+      }
+
+      const btnText3 = document.querySelector("#btn-text-4");
+      const select4 = document.querySelector("#select-4");
+      select4.addEventListener("click", () => {
+        select4.classList.toggle("open");
+      });
+      const items3 = document.querySelectorAll("#item-4");
+      items3.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("checked");
+          const value = item.getAttribute("data-value");
+
+          if (item.classList.contains("checked")) {
+            selectedValues3.push(value);
+          } else {
+            const index = selectedValues3.indexOf(value);
+            if (index !== -1) {
+              selectedValues3.splice(index, 1);
+            }
+          }
+
+          if (selectedValues3.length > 0) {
+            btnText3.innerText = `${
+              selectedValues3[selectedValues3.length - 1]
+            } `;
+          }
+
+          console.log(selectedValues3);
         });
-    }
-    const form = document.getElementById("myForm");
-    form.addEventListener("submit", handleSubmit);
-  </script>
+      });
 
-  <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/36391285" style="position: absolute; left: -9999px" alt="" />
-    </div>
-  </noscript>
-</body>
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", handleSubmit);
+    </script>
 
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/36391285"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+  </body>
 </html>

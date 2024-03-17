@@ -4252,14 +4252,14 @@
               // Create HTML elements for the card
               cardData.unshift({
                 logo: item.imageUrl,
-                icon: "group-card__icon-instagram", // Assuming you want to set a default icon
-                iconName: "icon-instagram", // Assuming you want to set a default icon name
-                category: "Business", // Example category
+                iconName: `icon-${item.iconName}` || "icon-instagram", // Assuming you want to set a default icon name
+                category: item.category || "Business", // Example category
                 name: item.topic,
                 description: item.description,
                 subscribers: item.subscribers,
-                income: "not specified", // Example income
+                income: item.income || "not specified", // Example income
                 price: item.price,
+                rights: item.adminRights,
               });
             });
 
@@ -4268,6 +4268,7 @@
         });
       }
 
+      console.log(cardData);
       // // Call the function to fetch data and insert cards initially
       fetchDataAndInsertCards();
       const banner = document.querySelector(".card-banner");
@@ -4284,7 +4285,9 @@
                               </div>
                             </div>
                             <div class="group-card__header">
-                              <div class="group-card__icon ${data.icon}">
+                              <div class="group-card__icon group-card__${
+                                data.iconName
+                              }">
                                 <i class="icon ${data.iconName}"></i>
                               </div>
                               <div class="group-card__title">
@@ -4344,32 +4347,6 @@
         container.appendChild(banner);
       }
 
-      // function filterCardData() {
-      //   // Get the minimum and maximum prices from the input fields
-      //   const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
-      //   const maxPrice = parseInt(priceInput[1].value.replace(/\D/g, "")); // Extract numeric characters only
-
-      //   // Filter cardData based on selected values and price range
-      //   const filteredData = cardData.filter((item) => {
-      //     // Extract the numeric price from the item
-      //     const price = parseInt(item.price.replace(/\D/g, "")); // Extract numeric characters only
-
-      //     // Check if the price of the card falls within the specified range
-      //     const isPriceInRange = price >= minPrice && price <= maxPrice;
-      //     console.log(selectedValues, "Selected ", selectedValues2);
-      //     return (
-      //       ((selectedValues.length === 0 && cardData) ||
-      //         selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-      //       (selectedValues2.includes("All") ||
-      //         selectedValues2.length === 0 ||
-      //         selectedValues2.includes(item.category)) &&
-      //       isPriceInRange
-      //     );
-      //   });
-
-      //   console.log("Filtered", filteredData);
-      //   // Render the filtered data
-      //   renderFilteredCards(filteredData);
       // }
       function filterCardData() {
         // Get the minimum and maximum prices from the input fields
@@ -4378,32 +4355,17 @@
 
         // Filter cardData based on selected values and price range
         const filteredData = cardData.filter((item) => {
-          // Extract the numeric price from the item
-          const price = parseInt(item.price.replace(/\D/g, "")); // Extract numeric characters only
-
-          // Check if the price of the card falls within the specified range
-          const isPriceInRange = price >= minPrice && price <= maxPrice;
-
-          console.log(getIconNameSuffix(item.iconName));
-          // Check if the item's iconName matches any selectedValues or if no iconName is selected
-          const isIconNameMatched = selectedValues.includes(
-            getIconNameSuffix(item.iconName)
-          );
-          console.log(selectedValues, "Selected ", isIconNameMatched);
-
-          // Check if the item's category matches any selectedValues2 or if 'All' is selected
-          const isCategoryMatched =
-            selectedValues2.includes("Bce") ||
-            selectedValues2.length === 0 ||
-            selectedValues2.includes(item.category);
-
+          if (item.rights) console.log(item);
           return (
-            (selectedValues.length === 0 ||
+            ((selectedValues.length === 0 ||
               selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-            (selectedValues2.includes("Bce") ||
-              selectedValues2.length === 0 ||
-              selectedValues2.includes(item.category)) &&
-            selectedValues3.length === 0
+              (selectedValues2.includes("Bce") ||
+                selectedValues2.length === 0 ||
+                selectedValues2.includes(item.category)) &&
+              selectedValues3.length === 0) ||
+            (item.rights &&
+              (selectedValues3.length === 0 ||
+                selectedValues3.includes(item.rights[0])))
           );
         });
 
