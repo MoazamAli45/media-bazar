@@ -724,22 +724,22 @@
             <div class="sort">
               <div class="sort__title">Сортировать по</div>
 
-              <a href="#" class="btn sort__button sort-asc">
+              <a class="btn sort__button sort-asc">
                 <i class="icon icon-sort"></i>
                 актуальности
               </a>
 
-              <a href="#" class="btn sort__button sort-asc">
+              <a class="btn sort__button sort-asc" id="sort-price">
                 <i class="icon icon-sort"></i>
                 цене
               </a>
 
-              <a href="#" class="btn sort__button sort-asc">
+              <a class="btn sort__button sort-asc" id="sort-subscribers">
                 <i class="icon icon-sort"></i>
                 подписчикам
               </a>
 
-              <a href="#" class="btn sort__button sort-asc">
+              <a class="btn sort__button sort-asc" id="sort-income">
                 <i class="icon icon-sort"></i>
                 доходу
               </a>
@@ -4397,7 +4397,6 @@
             selectedValues2.length === 0 ||
             selectedValues2.includes(item.category);
 
-          // return isIconNameMatched && isCategoryMatched && isPriceInRange;
           return (
             (selectedValues.length === 0 ||
               selectedValues.includes(getIconNameSuffix(item.iconName))) &&
@@ -4455,6 +4454,94 @@
           );
         });
         renderFilteredCards(filteredData);
+      });
+
+      //    SORTING
+      const sortByPrice = document.querySelector("#sort-price");
+      const sortByIncome = document.querySelector("#sort-income");
+      const sortBySubscribers = document.querySelector("#sort-subscribers");
+      let sortDirection = "asc";
+      sortBySubscribers.addEventListener("click", () => {
+        let sortedData;
+
+        if (sortDirection === "asc") {
+          sortedData = cardData.sort((a, b) => {
+            return (
+              parseInt(a.subscribers.replace(/\D/g, "")) -
+              parseInt(b.subscribers.replace(/\D/g, ""))
+            );
+          });
+          sortDirection = "desc"; // Update sort direction to descending
+        } else if (sortDirection === "desc") {
+          sortedData = cardData.sort((a, b) => {
+            return (
+              parseInt(b.subscribers.replace(/\D/g, "")) -
+              parseInt(a.subscribers.replace(/\D/g, ""))
+            );
+          });
+          sortDirection = "asc"; // Update sort direction to ascending
+        } else {
+          sortedData = cardData; // Reset to original cardData
+          sortDirection = "asc"; // Update sort direction to ascending
+        }
+        renderFilteredCards(sortedData);
+      });
+      sortByIncome.addEventListener("click", () => {
+        let sortedData;
+
+        if (sortDirection === "asc") {
+          sortedData = cardData.sort((a, b) => {
+            // Parse income values, handling cases where income is not specified or in different formats
+            const incomeA = parseInt(a.income.replace(/\D/g, "")) || 0;
+            const incomeB = parseInt(b.income.replace(/\D/g, "")) || 0;
+
+            return incomeA - incomeB;
+          });
+          sortDirection = "desc"; // Update sort direction to descending
+        } else if (sortDirection === "desc") {
+          sortedData = cardData.sort((a, b) => {
+            // Parse income values, handling cases where income is not specified or in different formats
+            const incomeA = parseInt(a.income.replace(/\D/g, "")) || 0;
+            const incomeB = parseInt(b.income.replace(/\D/g, "")) || 0;
+
+            return incomeB - incomeA;
+          });
+          sortDirection = "asc"; // Update sort direction to ascending
+        } else {
+          sortedData = cardData; // Reset to original cardData
+          sortDirection = "asc"; // Update sort direction to ascending
+        }
+        renderFilteredCards(sortedData);
+      });
+
+      console.log("sortByPrice", sortByPrice, sortBySubscribers, sortByIncome);
+      // Initialize sort direction
+
+      sortByPrice.addEventListener("click", () => {
+        let sortedData;
+
+        if (sortDirection === "asc") {
+          sortedData = cardData.sort((a, b) => {
+            return (
+              parseInt(a.price.replace(/\D/g, "")) -
+              parseInt(b.price.replace(/\D/g, ""))
+            );
+          });
+          sortDirection = "desc"; // Update sort direction to descending
+        } else if (sortDirection === "desc") {
+          sortedData = cardData.sort((a, b) => {
+            return (
+              parseInt(b.price.replace(/\D/g, "")) -
+              parseInt(a.price.replace(/\D/g, ""))
+            );
+          });
+          sortDirection = "asc"; // Update sort direction to ascending
+        } else {
+          sortedData = cardData; // Reset to original cardData
+          sortDirection = "asc"; // Update sort direction to ascending
+        }
+
+        renderFilteredCards(sortedData);
       });
 
       //   EXTRACTING ICON NAME ------------------->
