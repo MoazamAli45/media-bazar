@@ -4350,22 +4350,18 @@
       // }
       function filterCardData() {
         // Get the minimum and maximum prices from the input fields
-        const minPrice = parseInt(priceInput[0].value.replace(/\D/g, "")); // Extract numeric characters only
-        const maxPrice = parseInt(priceInput[1].value.replace(/\D/g, "")); // Extract numeric characters only
 
         // Filter cardData based on selected values and price range
         const filteredData = cardData.filter((item) => {
-          if (item.rights) console.log(item);
+          console.log(item.iconName);
           return (
-            ((selectedValues.length === 0 ||
+            (selectedValues.length === 0 ||
               selectedValues.includes(getIconNameSuffix(item.iconName))) &&
-              (selectedValues2.includes("Bce") ||
-                selectedValues2.length === 0 ||
-                selectedValues2.includes(item.category)) &&
-              selectedValues3.length === 0) ||
-            (item.rights &&
-              (selectedValues3.length === 0 ||
-                selectedValues3.includes(item.rights[0])))
+            (selectedValues2.includes("Bce") ||
+              selectedValues2.length === 0 ||
+              selectedValues2.includes(item.category)) &&
+            (selectedValues3.length === 0 ||
+              (item.rights && selectedValues3.includes(item.rights[0])))
           );
         });
 
@@ -4509,7 +4505,6 @@
       //   EXTRACTING ICON NAME ------------------->
       // Function to extract the part of iconName after the hyphen
       function getIconNameSuffix(iconName) {
-        console.log(iconName);
         // Split iconName by hyphen ("-") and get the second part
         const [, suffix] = iconName.split("-");
         return suffix;
