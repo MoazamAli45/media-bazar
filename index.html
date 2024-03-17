@@ -437,11 +437,11 @@
                       </span>
                     </div>
                     <ul class="list-items">
-                      <li id="item-2" class="item-1" data-value="Все">
+                      <li id="item-2" class="item" data-value="Bce">
                         <span class="checkbox">
                           <i class="fa-solid fa-check check-icon"></i>
                         </span>
-                        <span class="item-text">Все</span>
+                        <span class="item-text">Bce</span>
                       </li>
                       <li id="item-2" class="item" data-value="Автомобили">
                         <span class="checkbox">
@@ -3717,12 +3717,15 @@
 
       select2.addEventListener("click", () => {
         select2.classList.toggle("open");
+        filterCardData();
       });
       select3.addEventListener("click", () => {
         select3.classList.toggle("open");
+        filterCardData();
       });
       selectBtn.addEventListener("click", () => {
         selectBtn.classList.toggle("open");
+        filterCardData();
       });
 
       items.forEach((item) => {
@@ -4331,43 +4334,34 @@
         container.appendChild(banner);
       }
 
-      //  <----------------After filtering of social media----------------->
-      const selectElement = document.getElementById("soc");
+      function filterCardData() {
+        // Filter cardData based on selected values
+        const filteredData = cardData.filter((item) => {
+          return (
+            (selectedValues.length === 0 ||
+              selectedValues.includes(getIconNameSuffix(item.iconName))) &&
+            (selectedValues2.includes("Bce") ||
+              selectedValues2.length === 0 ||
+              selectedValues2.includes(item.category)) &&
+            selectedValues3.length === 0
+          );
+        });
 
-      // Listen for changes in the select element
-
-      // const form = document.querySelector(".filter-form");
-      // selectElement.addEventListener("change", function (e) {
-      //   e.preventDefault();
-      //   console.log("CHANGE");
-      //   // Get the selected options
-      //   const selectedOptions = Array.from(this.selectedOptions).map(
-      //     (option) => option.value
-      //   );
-      //   console.log(selectedOptions, "SELECTED");
-      //   // Filter the cardData array based on the selected options
-      //   const filteredData = cardData.filter((item) => {
-      //     return selectedOptions.includes(getIconNameSuffix(item.iconName));
-      //   });
-      //   // console.log(filteredData, "FILTERED");
-      //   // // Call a function to render the filtered data
-      //   renderFilteredData(filteredData);
-      //   // cardData = filteredData;
-      //   // console.log(cardData, "After FIltered");
-      //   // // Call a function to render the filtered data
-      //   // renderCards();
-      // });
-
-      // Function to render the filtered data
-      function renderFilteredData(filteredData) {
-        console.log(filteredData);
+        console.log("Filtered", filteredData);
+        // Render the filtered data
+        renderFilteredCards(filteredData);
+      }
+      function renderFilteredCards(filteredData) {
         // Clear previous content in the container
         container.innerHTML = "";
 
-        // Iterate over cardData and create cards
+        // Iterate over filteredData and create cards
         filteredData.forEach((item) => {
           container.appendChild(createCard(item));
         });
+
+        // After rendering the filtered cards, append the banner
+        container.appendChild(banner);
       }
 
       //   EXTRACTING ICON NAME ------------------->
