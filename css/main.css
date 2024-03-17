@@ -1,0 +1,101 @@
+.heading-page {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 30px;
+}
+.description-page p {
+  padding-bottom: 10px;
+}
+.list-services ul {
+  padding: 0px;
+}
+.list-services ul li {
+  padding-bottom: 10px;
+  position: relative;
+  line-height: 20px;
+}
+.seller-desc {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgb(212, 195, 195);
+}
+.seller-desc p {
+  padding-bottom: 15px;
+}
+.contacts {
+  padding: 30px 0px;
+}
+.contacts h2 {
+  padding-bottom: 20px;
+}
+.contacts p {
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+p {
+  line-height: 20px;
+}
+.viewss p {
+  padding-bottom: 15px;
+}
+
+.add-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-submit button {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.flex-seller {
+  display: flex;
+  gap: 10px;
+}
+
+.left {
+  max-width: 60%;
+  width: 100%;
+}
+.right {
+  max-width: 40%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .add-form {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 776px) {
+  .flex-seller {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__navigation_service ul {
+    flex-direction: column;
+  }
+}

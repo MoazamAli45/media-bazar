@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords"
+        content="продать купить группу сообщество паблик профиль ВКонтакте VK Telegram Instagram Facebook Одноклассники TikTok Youtube">
+    <meta name="description"
+        content="Биржа групп Salegroups позволяет быстро и безопасно купить или продать профиль, сообщество или паблик в Instagram, ВКонтакте, Telegram, Одноклассники, Facebook, TikTok, Youtube.  Множество продавцов и покупателей!">
+
+    <title> Правила использования
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="messages" class="messages"></div>
+
+
+    <a href="javascript:void(0)" data-toggle="modal" data-target="#registrationModal" class="chat-button">
+        <div class="chat-button__container" title="Написать администрации сайта">
+            <i class="icon icon-chat"></i>
+        </div>
+        <div class="chat-button__hint">
+            Написать администрации сайта
+        </div>
+    </a>
+
+    <div class="page">
+
+        <header id="header" class="header">
+            <div class="header__top container">
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="" href="index.html">
+                                <i class="icon icon-briefcase"></i>Биржа
+                            </a>
+                        </li>
+                        <li class="header__menu-dropdown">
+                            <a class="" href="how-it-work.html">
+                                <i class="icon icon-shield2"></i>Безопасная сделка
+                            </a>
+                            <ul>
+                                <li><a class="" href="how-it-work.html">Безопасная Сделка</a></li>
+                                <li><a class="" href="fee.html">Безопасная сделка в телеграмме</a></li>
+                                <li><a class="" href="arbitrage.html">Решение споров</a></li>
+                                <li><a class="" href="review.html">Гарант</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="header__menu-dropdown">
+                            <a class="" href="javascript:void(0)">
+                                Другое
+                            </a>
+                            <ul>
+                                <li><a class="" href="sellers.html">Партнерская программа</a></li>
+                                <li><a class="" href="become-seller.html"> Как стать продавцом</a></li>
+                                <li><a class="" href="become-buyer.html">Как стать покупателем</a></li>
+                                <li><a class="" href="contact-seller.html">Контакты
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-dropdown">
+                            <a class="" href="javascript:void(0)">
+                                Другое (other)
+                            </a>
+                            <ul>
+                                <li><a class="" href="about-services.html">О Сервисе</a></li>
+                                <li><a class="" href="gurantator-services.html">Договор-оферта на оказание услуг гаранта
+                                        сделки
+                                    </a></li>
+                                <li><a class="" href="invidual-services.html">Договор-оферта на оказание отдельных
+                                        услуг</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="header__logo"></a>
+
+                <div class="header__top-actions">
+                    <button data-goal="create-advert" type="button" data-toggle="modal" data-target="#registrationModal"
+                        class="btn btn_blue">
+                        <i class="icon icon_mr icon-new"></i>
+                        Новое объявление
+                    </button>
+
+                    <div class="button-group">
+                        <button data-goal="click-reg" data-toggle="modal" data-target="#registrationModal"
+                            class="btn btn_green" type="button">
+                            <i class="icon icon_mr icon-user"></i>
+                            Регистрация
+                        </button>
+                        <a href="add.html" data-target="#loginModal" class="btn" type="button">
+                            <i class="icon icon_mr icon-login"></i>
+                            Login
+                        </a>
+                    </div>
+
+                </div>
+                <div class="header__mobile-links">
+                </div>
+
+                <button type="button" class="header__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+            <div class="header__dropdown">
+                <div class="container">
+                    <div class="header__dropdown-actions">
+                        <a href="javascript:void(0)" data-goal="create-advert" type="button" data-toggle="modal"
+                            data-target="#registrationModal" class="btn btn_blue btn--dropdown">
+                            <i class="icon icon_mr icon-new"></i>
+                            Новое объявление
+                        </a>
+                        <div class="button-group">
+                            <button data-goal="click-reg" data-toggle="modal" data-target="#registrationModal"
+                                class="btn btn_green" type="button">
+                                <i class="icon icon_mr icon-user"></i>
+                                Регистрация
+                            </button>
+                            <a href="add.html" data-target="#loginModal" class="btn header__login" type="button">
+                                <i class="icon icon_mr icon-login"></i>
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="header__dropdown-menu">
+
+                        <ul>
+                            <li>
+                                <a class="" href="index.html">
+                                    <i class="icon icon-briefcase"></i>Биржа
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="how-it-work.html">
+                                    <i class="icon icon-shield2"></i>Безопасная сделка
+                                </a>
+                                <ul>
+                                    <li><a class="" href="how-it-work.html">Безопасная Сделка</a></li>
+                                    <li><a class="" href="fee.html">Безопасная сделка в телеграмме</a></li>
+                                    <li><a class="" href="arbitrage.html">Решение споров</a></li>
+                                    <li><a class="" href="review.html">Гарант</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="" href="sellers.html">
+                                    <i class="icon icon-trophy"></i>Рейтинг Продавцов
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="become-seller.html"> <i class="icon icon-handshake"></i>Партнерка
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content content_change-container about">
+            <section class="main-screen main-screen_no-image">
+                <div class="main-screen__bg"></div>
+                <div class="main-screen__container main-screen__container container">
+                    <h1 class="main-screen__title">Политика конфиденциальности</h1>
+                </div>
+            </section>
+            <section class="container container_with-bg">
+                <div class="box">
+                    <div class="about__part box__part">
+                        <div class="box__part-content text">
+                            <div class="title">Дата размещения на Сайте 2016 г.</div>
+                            <p>Настоящая Политика конфиденциальности регулирует порядок обработки и использования
+                                персональных и иных данных сайтом https://salegroups.ru/ (далее — SaleGroups).</p>
+                            <p>Передавая в SaleGroups персональные и иные данные, Пользователь подтверждает свое
+                                согласие на использование указанных данных на условиях, изложенных в настоящей Политике
+                                конфиденциальности.</p>
+                            <p class="description"><strong>Если Пользователь не согласен с условиями настоящей Политики
+                                    конфиденциальности, он обязан прекратить использование Сайта. Безусловным акцептом
+                                    настоящей Политики конфиденциальности является начало использования Сайта
+                                    Пользователем.</strong></p>
+                            <div class="points">
+                                <h2>1. ТЕРМИНЫ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">1.1.</div>
+                                    <div class="points__body"><strong>Сайт</strong> - сайт, расположенный в сети
+                                        Интернет по адресу https://salegroups.ru/. <strong>Все исключительные права на
+                                            Сайт и его отдельные элементы (включая программное обеспечение, дизайн)
+                                            принадлежат Оператору в полном объеме. Передача исключительных прав
+                                            Пользователю не является предметом настоящей Политики
+                                            конфиденциальности.</strong></div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.2.</div>
+                                    <div class="points__body"><strong>Пользователь</strong> — лицо использующее Сайт.
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.3.</div>
+                                    <div class="points__body"><strong>Законодательство</strong> — действующее
+                                        законодательство </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.4.</div>
+                                    <div class="points__body"><strong>Персональные данные</strong> — персональные данные
+                                        Пользователя, которые Пользователь предоставляет о себе самостоятельно при
+                                        Регистрации или в процессе использования функционала Сайта.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.5.</div>
+                                    <div class="points__body"><strong>Данные</strong> — иные данные о Пользователе (не
+                                        входящие в понятие Персональных данных).</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.6.</div>
+                                    <div class="points__body"><strong>Регистрация</strong> — заполнение Пользователем
+                                        Регистрационной формы, расположенной на Сайте, путем указания необходимых
+                                        сведений и выбора Логина и пароля.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.7.</div>
+                                    <div class="points__body"><strong>Регистрационная форма</strong> — форма,
+                                        расположенная на Сайте, которую Пользователь должен заполнить для прохождения
+                                        Регистрации на Сайте.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">1.8.</div>
+                                    <div class="points__body"><strong>Услуга(и)</strong> — услуги, предоставляемые
+                                        Сайтом на основании <strong>Пользовательского соглашения</strong>.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>2. СБОР И ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.</div>
+                                    <div class="points__body">SaleGroups собирает и хранит только те Персональные
+                                        данные, которые необходимы для оказания Услуг Сайтом и взаимодействия с
+                                        Пользователем.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.2.</div>
+                                    <div class="points__body">Персональные данные могут использоваться в следующих
+                                        целях:</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.2.1.</div>
+                                    <div class="points__body">оказание Услуг Пользователю;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.2.</div>
+                                    <div class="points__body">идентификация Пользователя;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.3.</div>
+                                    <div class="points__body">взаимодействие с Пользователем;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.4.</div>
+                                    <div class="points__body">направление Пользователю рекламных материалов, информации
+                                        и запросов;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.5.</div>
+                                    <div class="points__body">проведение статистических и иных исследований;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.6.</div>
+                                    <div class="points__body">обработка платежей Пользователя;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.1.7.</div>
+                                    <div class="points__body">мониторинг операций Пользователя в целях предотвращения
+                                        мошенничества, противоправных ставок, отмывания денег.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.3.</div>
+                                    <div class="points__body">SaleGroups в том числе обрабатывает следующие данные:
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.3.1.</div>
+                                    <div class="points__body">фамилия, имя и отчество;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.3.2.</div>
+                                    <div class="points__body">адрес электронной почты;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.3.3.</div>
+                                    <div class="points__body">номер мобильного телефона.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.3.4.</div>
+                                    <div class="points__body">идентификационный номер пользователя в социальной сети
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">2.4.</div>
+                                    <div class="points__body">Пользователю запрещается указывать на Сайте персональные
+                                        данные третьих лиц.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>3. ПОРЯДОК ОБРАБОТКИ ПЕРСОНАЛЬНЫХ И ИНЫХ ДАННЫХ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">3.1.</div>
+                                    <div class="points__body">SaleGroups обязуется использовать Персональные данные в
+                                        соответствии с Федеральным Законом «О персональных данных» № 152-ФЗ от 27 июля
+                                        2006 г. и внутренними документами Сайта.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.2.</div>
+                                    <div class="points__body">В отношении Персональных данных и иных Данных Пользователя
+                                        сохраняется их конфиденциальность, кроме случаев, когда указанные данные
+                                        являются общедоступными.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.3.</div>
+                                    <div class="points__body">SaleGroups имеет право сохранять архивную копию
+                                        Персональных данных и Данных, в том числе после удаления аккаунта Пользователя.
+                                        SaleGroups имеет право хранить Персональные данные и Данные на серверах вне
+                                        территории Российской Федерации.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.4.</div>
+                                    <div class="points__body">SaleGroups имеет право передавать Персональные данные и
+                                        Данные Пользователя без согласия Пользователя следующим лицам:</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.4.1.</div>
+                                    <div class="points__body">государственным органам, в том числе органам дознания и
+                                        следствия, и органам местного самоуправления по их мотивированному запросу;
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.4.2.</div>
+                                    <div class="points__body">партнерам SaleGroups;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.4.3.</div>
+                                    <div class="points__body">в иных случаях, прямо предусмотренных действующим
+                                        законодательством .</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.5.</div>
+                                    <div class="points__body">SaleGroups имеет право передавать Персональные данные и
+                                        Данные третьим лицам, не указанным в п. 3.4. настоящей Политики
+                                        конфиденциальности, в следующих случаях:</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.5.1.</div>
+                                    <div class="points__body">Пользователь выразил свое согласие на такие действия;
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.5.2.</div>
+                                    <div class="points__body">передача необходима в рамках использования Пользователем
+                                        Сайта или оказания Услуг Пользователю;</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.5.3.</div>
+                                    <div class="points__body">передача происходит в рамках продажи или иной передачи
+                                        бизнеса (полностью или в части), при этом к приобретателю переходят все
+                                        обязательства по соблюдению условий настоящей Политики.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">3.6.</div>
+                                    <div class="points__body">SaleGroups осуществляет автоматизированную обработку
+                                        Персональных данных и Данных.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>4. ИЗМЕНЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">4.1.</div>
+                                    <div class="points__body">Пользователь может в любой момент изменить (обновить,
+                                        дополнить) Персональные данные посредством Личного кабинета либо путем
+                                        направления письменного заявления в SaleGroups.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">4.2.</div>
+                                    <div class="points__body">Пользователь в любой момент имеет право удалить
+                                        Персональные данные.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">4.3.</div>
+                                    <div class="points__body">Пользователь гарантирует, что все Персональные данные
+                                        являются актуальными и не относятся к третьим лицам.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>5. ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">5.1.</div>
+                                    <div class="points__body">SaleGroups осуществляет надлежащую защиту Персональных и
+                                        иных данных в соответствии с Законодательством и принимает необходимые и
+                                        достаточные организационные и технические меры для защиты Персональных данных.
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">5.2.</div>
+                                    <div class="points__body">Применяемые меры защиты в том числе позволяют защитить
+                                        Персональные данные от неправомерного или случайного доступа, уничтожения,
+                                        изменения, блокирования, копирования, распространения, а также от иных
+                                        неправомерных действий с ними третьих лиц.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>6. ПЕРСОНАЛЬНЫЕ ДАННЫЕ ТРЕТЬХ ЛИЦ ИСПОЛЬЗУЕМЫЕ ПОЛЬЗОВАТЕЛЯМИ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">6.1.</div>
+                                    <div class="points__body">Используя Сайт Пользователь имеет право заносить данные
+                                        третьих лиц для последующего использования.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">6.2.</div>
+                                    <div class="points__body">Пользователь обязуется получить согласие субъекта
+                                        персональных данных на использование посредством Сайта.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">6.3.</div>
+                                    <div class="points__body">SaleGroups не использует персональные данные третьих лиц
+                                        занесенные Пользователем.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">6.4.</div>
+                                    <div class="points__body">SaleGroups обязуется предпринять необходимые меры для
+                                        обеспечения сохранности персональных данных третьих лиц, занесенных
+                                        Пользователем.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>7. ИНЫЕ ПОЛОЖЕНИЯ</h2>
+                                <div class="points__row">
+                                    <div class="points__value">7.1.</div>
+                                    <div class="points__body">К настоящей Политике конфиденциальности и отношениям между
+                                        Пользователем и SaleGroups, возникающим в связи с применением Политики
+                                        конфиденциальности, подлежит применению право стран Евросоюза.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">7.2.</div>
+                                    <div class="points__body">
+                                        <p>Все возможные споры, вытекающие из настоящего Соглашения, подлежат разрешению
+                                            в соответствии с действующим законодательством по месту регистрации
+                                            SaleGroups.</p>
+                                        <p>Перед обращением в суд Пользователь должен соблюсти обязательный досудебный
+                                            порядок и направить в SaleGroups соответствующую претензию в письменном
+                                            виде. Срок ответа на претензию составляет 30 (тридцать) рабочих дней.</p>
+                                    </div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">7.3.</div>
+                                    <div class="points__body">Если по тем или иным причинам одно или несколько положений
+                                        Политики конфиденциальности будут признаны недействительными или не имеющими
+                                        юридической силы, это не оказывает влияния на действительность или применимость
+                                        остальных положений Политики конфиденциальности.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">7.4.</div>
+                                    <div class="points__body">SaleGroups имеет право в любой момент изменять Политику
+                                        конфиденциальности (полностью или в части) в одностороннем порядке без
+                                        предварительного согласования с Пользователем. Все изменения вступают в силу на
+                                        следующий день после размещения на Сайте.</div>
+                                </div>
+                                <div class="points__row">
+                                    <div class="points__value">7.5.</div>
+                                    <div class="points__body">Пользователь обязуется самостоятельно следить за
+                                        изменениями Политики конфиденциальности путем ознакомления с актуальной
+                                        редакцией.</div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                <h2>8. КОНТАКТНАЯ ИНФОРМАЦИЯ SaleGroups</h2>
+                                <div class="points__row">
+                                    <div class="points__value">8.1.</div>
+                                    <div class="points__body">E-mail: info@salegroups.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__container container">
+                    <div class="footer__menu">
+                        <div class="footer__navigation footer__navigation_service">
+                            <div class="footer__navigation-title">Сервис</div>
+                            <ul>
+                                <li><a href="contact-seller.html">Контакты</a></li>
+                                <li><a href="about.html">О сервисе</a></li>
+                                <li><a href="rules.html">Правила использования нашей биржи</a></li>
+                                <li><a href="#">Договор оферты на оказание услуг гаранта сделки</a>
+                                </li>
+                                <li><a href="#">Договор оферты на оказание отдельных услуг
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation footer__navigation_information">
+                            <div class="footer__navigation-title">Информация</div>
+                            <ul>
+                                <li><a href="Offer.html">Пользовательское соглашение</a></li>
+                                <li><a href="offer-grant.html">Оферта гаранта</a></li>
+                                <li><a href="Policy.html">Политика конфиденциальности</a></li>
+                                <li><a href="rules.html">Правила пользования</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation footer__navigation_networks">
+                            <div class="footer__navigation-title">Мы в соц. сетях</div>
+                            <ul>
+                                <!-- <li><a href="#"><i class="icon icon-vk"></i></a></li> -->
+                                <li><a href="#"><i class="icon icon-telegram"></i></a></li>
+                            </ul>
+
+                            <!-- <div class="tablet footer__navigation_payment--ul">
+                                <span><img src="images/yandex-money.svg"></span>
+                                <span><img src="images/qiwi.svg"></span>
+                                <span><img src="images/visa.svg"></span>
+                                <span><img src="images/master-card.svg"></span>
+                            </div> -->
+                        </div>
+                        <!-- <div class="desktop footer__navigation footer__navigation_payment">
+                            <ul>
+                                <li><img src="images/yandex-money.svg"></li>
+                                <li><img src="images/qiwi.svg"></li>
+                                <li><img src="images/visa.svg"></li>
+                                <li><img src="images/master-card.svg"></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__copyright">© MediaBazar.social, 2016-2024</div>
+                        <div class="footer__description">
+                            Биржа каналов и груп в
+                            социальных сетях<br><br>
+                        </div>
+                        <div class="footer__by"></div>
+
+                        <div class="footer__navigation footer__navigation_infonetworks">
+                            <div class="footer__navigation-title">Мы в соц. сетях</div>
+                            <ul>
+                                <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                                <li><a href="#"><i class="icon icon-telegram"></i></a></li>
+                            </ul>
+
+                            <div class="tablet footer__navigation_payment--ul">
+                                <span><img src="images/yandex-money.svg"></span>
+                                <span><img src="images/qiwi.svg"></span>
+                                <span><img src="images/visa.svg"></span>
+                                <span><img src="images/master-card.svg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popups">
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
+                <div class="modal-content modal__box">
+                    <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-close-thin"></i>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modal__title">Войти</div>
+                    </div>
+                    <form class="login-modal__content modal__content" action="/login_check" data-ajax=""
+                        data-success="redirect" method="post">
+                        <input type="hidden" name="_csrf_token" value="3VBB6pgL6OFFa8zD0zs_CEDhs3IANppQz8L_Jjtp5QQ" />
+                        <input type="hidden" name="_target_path" value="/policy/" />
+
+                        <div class="login-modal__inputs">
+                            <div class="error-container" data-entity="form-error"></div>
+                            <div class="input-text">
+                                <input type="text" name="_username" placeholder="E-mail" value="" required="required">
+                            </div>
+                            <div class="input-text">
+                                <input type="password" name="_password" placeholder="Пароль" required="required">
+                            </div>
+                        </div>
+
+                        <div class="login-modal__under-inputs">
+                            <label class="input-checkbox">
+                                <input type="checkbox" name="_remember_me" value="on" checked>
+                                <div class="input-checkbox__box"></div>
+                                <div class="input-checkbox__label">Запомнить</div>
+                            </label>
+                            <a href="#" class="login-modal__recover-link" data-toggle="modal"
+                                data-target="#resetPasswordModal">Восстановить пароль</a>
+                        </div>
+
+                        <div class="login-modal__submit">
+                            <button type="submit" id="submit_login"
+                                class="btn btn_blue btn_shadow btn_action">войти</button>
+                        </div>
+                    </form>
+                    <div class="login-modal__extra">
+                        <div class="login-modal__extra-title">
+                            или быстро войти через соцсети
+                        </div>
+                        <div class="login-modal__socials">
+
+                            <div class="socials">
+                                <a href="https://salegroups.ru/connect/vk" class="socials__item socials__item_vk">
+                                    <i class="icon icon-vk"></i>
+                                </a>
+                                <a href="https://salegroups.ru/connect/fb" class="socials__item socials__item_fb">
+                                    <i class="icon icon-fb"></i>
+                                </a>
+                                <a href="https://salegroups.ru/connect/ok" class="socials__item socials__item_ok">
+                                    <i class="icon icon-ok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog"
+            aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+            <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
+                <div class="modal-content modal__box">
+                    <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-close-thin"></i>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modal__title">Восстановление пароля</div>
+                    </div>
+                    <form class="login-modal__content modal__content" data-ajax="" data-success="close-modal"
+                        action="/resetting/send" method="post">
+                        <div class="login-modal__inputs">
+                            <div class="error-container" data-entity="form-error"></div>
+                            <div class="input-text">
+                                <input type="text" name="username" placeholder="E-mail" required="required">
+                            </div>
+                        </div>
+                        <div class="login-modal__submit">
+                            <button type="submit" class="btn btn_blue btn_shadow btn_action">Сбросить пароль</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog"
+            aria-labelledby="registrationModalLabel" aria-hidden="true">
+            <div class="login-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
+                <div class="modal-content modal__box">
+                    <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-close-thin"></i>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modal__title">Регистрация</div>
+                    </div>
+                    <form name="fos_user_registration_form" method="post" action="/register"
+                        class="login-modal__content modal__content" autocomplete="new-password" data-ajax=""
+                        data-success="redirect">
+                        <input type="hidden" name="_target_path" value="/policy/" />
+
+                        <div class="login-modal__inputs">
+                            <div class="error-container" data-entity="form-error"></div>
+                            <div class="input-text">
+                                <input type="text" id="fos_user_registration_form_fullName"
+                                    name="fos_user_registration_form[fullName]" required="required" maxlength="45"
+                                    pattern=".{3,}" autocomplete="off" placeholder="Ваше имя" />
+                            </div>
+                            <div class="input-text">
+                                <input type="email" id="fos_user_registration_form_email"
+                                    name="fos_user_registration_form[email]" required="required" autocomplete="off"
+                                    placeholder="E-mail" />
+                            </div>
+                            <div class="input-text">
+                                <input type="password" id="fos_user_registration_form_plainPassword"
+                                    name="fos_user_registration_form[plainPassword]" required="required"
+                                    autocomplete="new-password" placeholder="Пароль" />
+                            </div>
+                        </div>
+                        <div class="login-modal__under-inputs">
+                            <label class="input-checkbox">
+                                <input type="checkbox" checked required="required" name="rules">
+                                <div class="input-checkbox__box"></div>
+                                <div class="input-checkbox__label">Я принимаю <a target="_blank"
+                                        href="/offer-garant/">оферту гаранта</a> и <a target="_blank"
+                                        href="Policy.html">политику конфиденциальности</a>, согласен с получением
+                                    уведомлений и новостей на почту</div>
+                            </label>
+                        </div>
+                        <div class="login-modal__submit">
+                            <button type="submit" data-goal="click-reg"
+                                class="btn btn_green btn_shadow btn_action">Зарегистрироваться</button>
+                        </div>
+                        <input type="hidden" id="fos_user_registration_form__target_path"
+                            name="fos_user_registration_form[_target_path]" /><input type="hidden"
+                            id="fos_user_registration_form__token" name="fos_user_registration_form[_token]"
+                            value="rCVhR5XXtEDap89JOK5Dexv-Pqr3IukteZus73KQZas" />
+                    </form>
+                    <div class="login-modal__extra">
+                        <div class="login-modal__extra-title">
+                            или быстро войти через соцсети
+                        </div>
+                        <div class="login-modal__socials">
+
+                            <div class="socials">
+                                <a href="https://salegroups.ru/connect/vk" class="socials__item socials__item_vk">
+                                    <i class="icon icon-vk"></i>
+                                </a>
+                                <a href="https://salegroups.ru/connect/fb" class="socials__item socials__item_fb">
+                                    <i class="icon icon-fb"></i>
+                                </a>
+                                <a href="https://salegroups.ru/connect/ok" class="socials__item socials__item_ok">
+                                    <i class="icon icon-ok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="socialsModal" tabindex="-1" role="dialog" aria-labelledby="socialsModalLabel"
+            aria-hidden="true">
+            <div class="socials-modal modal-dialog modal-dialog-centered modal__dialog" role="document">
+                <div class="modal-content modal__box">
+                    <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon icon-close-thin"></i>
+                    </button>
+                    <div class="socials-modal__content">
+                        <div class="socials-modal__image">
+                            <img src="/assets/img/socials.svg" alt="">
+                        </div>
+                        <div class="socials-modal__container">
+                            <div class="socials-modal__title">Быстро. Безопасно. Salegroups!</div>
+                            <div class="socials-modal__body">Подписывайтесь на нас, чтобы не упустить возможность живого
+                                общения, получения новостей, новых объявлений и полезных советов</div>
+                            <div class="socials-modal__buttons">
+                                <a href="https://vk.com/salegroupsru" target="_blank"
+                                    class="btn btn_action socials-modal__button socials-modal__button_vk"
+                                    rel="noreferrer">
+                                    <i class="icon icon-vk"></i>
+                                    Перейти в группу VK
+                                </a>
+                                <a href="https://t.me/salegroups" target="_blank"
+                                    class="btn btn_action socials-modal__button socials-modal__button_telegram"
+                                    rel="noreferrer">
+                                    <i class="icon icon-telegram"></i>
+                                    Перейти в Telegram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.__date = {
+            upload_avatar: '/user/avatar',
+            _cache: 'bacd5f82b19797d2721f94071fb7dee3',
+        }
+
+        window.sse = {
+            user: 'anon',
+            hub: 'https://salegroups.ru:3000',
+            heartbeatTimeout: 300000,
+            token: '',
+            topics: []
+        }
+
+
+        document.addEventListener('lazybeforeunveil', function (e) {
+            var bg = e.target.getAttribute('data-bg');
+
+            if (bg) {
+                e.target.style.backgroundImage = 'url(' + bg + ')';
+            }
+        });
+    </script>
+
+
+
+    <script src="js/script.js"></script>
+
+    <script>
+        var HW_config = {
+            selector: ".header__logo",
+            account: "J3PaPy",
+            translations: {
+                title: "Последние обновления",
+                readMore: "Подробнее",
+                labels: {
+                    "new": "Новинка",
+                    "improvement": "Улучшение",
+                    "fix": "Исправление"
+                }
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+
+
+    <script>
+        var isLoadVk = false;
+        // window.onscroll = function() {
+        //     if (isLoadVk) {
+        //         return;
+        //     }
+        //     isLoadVk = true;
+        //     $.getScript("https://vk.com/js/api/openapi.js?167", function () {
+        //         VK.Widgets.Group("vk_groups", {mode: 1, color1: '1D3143', color2: 'FFFFFF', width: 'auto', no_cover: 1}, 122745489);
+        //     });
+        // };
+
+        window.onload = function () {
+            setTimeout(function () {
+                $.getScript('https://cdn.headwayapp.co/widget.js');
+
+                (function (m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function () {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    };
+                    m[i].l = 1 * new Date();
+                    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                })
+                    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym(36391285, "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            }, 3000);
+        }
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/36391285" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+
+</body>
+
+</html>
